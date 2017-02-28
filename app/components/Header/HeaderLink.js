@@ -2,24 +2,20 @@ import { Link } from 'react-router';
 import styled from 'styled-components';
 
 export default styled(Link)`
-  display: inline-flex;
-  padding: 0.25em 2em;
-  margin: 1em;
-  text-decoration: none;
-  border-radius: 4px;
-  -webkit-font-smoothing: antialiased;
-  -webkit-touch-callout: none;
-  user-select: none;
-  cursor: pointer;
-  outline: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  border: 2px solid #41ADDD;
-  color: #41ADDD;
-  
-  &:active {
-    background: #41ADDD;
-    color: #FFF;
-  }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+		transition: all 0.5s ease;
+		font-size: 1rem;
+    	font-family: "Century Gothic", 'Lato', sans-serif;
+      text-decoration:none;  
+	  &:hover {
+			color:white;
+      background: rgba(102,177,241,0.8);
+			transition: all 0.5s ease;
+    }
 `;

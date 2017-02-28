@@ -47,6 +47,30 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
+      path: '/services',
+      name: 'servicesPage',
+      getComponent(location, cb) {
+        import('containers/ServicesPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/contact',
+      name: 'contactPage',
+      getComponent(location, cb) {
+        import('containers/ContactPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/about',
+      name: 'aboutPage',
+      getComponent(location, cb) {
+        import('containers/AboutPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
