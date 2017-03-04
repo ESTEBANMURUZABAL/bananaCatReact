@@ -23,7 +23,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
 
   render() {
     return (
-      <div>
+      <div style={container}>
         <Helmet
           title="Feature Page"
           meta={[
@@ -83,3 +83,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
     );
   }
 }
+
+const container = {
+  height: 740
+};

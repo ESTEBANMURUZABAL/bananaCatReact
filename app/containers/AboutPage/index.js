@@ -20,7 +20,7 @@ export default class AboutPage extends React.Component { // eslint-disable-line 
 
   render() {
     return (
-      <div>
+      <div style={container}>
         <Helmet
           title="About Page"
           meta={[
@@ -35,3 +35,7 @@ export default class AboutPage extends React.Component { // eslint-disable-line 
     );
   }
 }
+
+const container = {
+  height: 740
+};

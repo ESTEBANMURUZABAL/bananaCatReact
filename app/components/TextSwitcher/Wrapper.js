@@ -7,7 +7,12 @@ const Wrapper = styled.div`
 
 		display: inline-block;
 		font-weight: normal;
-		color: red;
+		color: rgb(255, 64, 86); transform: translate3d(-3.785px, -1.65px, 0px);
+    
+    line-height: 1.2;
+    letter-spacing: -.45rem;
+    display: inline-block;
+    font-weight: normal;
 
 
 

@@ -6,17 +6,34 @@ import Wrapper from './Wrapper';
 
 
 export default class TextSwitcher extends React.Component {
+  constructor(props) {
+    super(props)
+
+
+    this.state = {
+      words: [
+        '\xa0websites',
+        '\xa0social media',
+        '\xa0mobile apps'
+      ],
+      currentWord: '',
+      i: 0,
+    }
+
+  }
+
+
   render() {
     // This must be exactly one element or it will warn.
-    const children = this.props.children;
+    const name = this.props.name;
     return (
       <Wrapper>
-        {children}
+        {name}
       </Wrapper>
     );
   }
 }
 
 TextSwitcher.propTypes = {
-  children: React.PropTypes.element.isRequired
+  name: React.PropTypes.string.isRequired
 };

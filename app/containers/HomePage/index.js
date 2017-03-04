@@ -25,14 +25,53 @@ import { makeSelectUsername } from './selectors';
 import TextSwitcher from 'components/TextSwitcher';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-  /**
-   * when initial state username is not null, submit the form to load repos
-   */
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      words: [
+        '\xa0dank memes',
+        '\xa0design mockups',
+        '\xa0social content',
+        '\xa0blogs & themes',
+        '\xa0eCommerce sites',
+        '\xa0Open Source Software',
+        '\xa0social media strategies',
+        '\xa0Photoshops of stuff',
+        '\xa0infographics & charts',
+        '\xa0guides & tutorials',
+        '\xa0product concepts',
+        '\xa0logos & branding assets',
+        '\xa0original content',
+        '\xa0real shit happen'
+      ],
+      currentWord: '\xa0websites',
+      i: 0,
+    }
+
+  }
+
   componentDidMount() {
     if (this.props.username && this.props.username.trim().length > 0) {
       this.props.onSubmitForm();
     }
+    this.changeWord();
   }
+
+  changeWord() {
+      let wordsLenght = this.state.words.length;
+      setInterval(()=>{
+      if (this.state.i <= wordsLenght) {
+          this.setState({
+            currentWord: this.state.words[this.state.i]
+          })
+          this.state.i == wordsLenght ? this.state.i = 1 : this.state.i++;
+      }
+    }, 2000)
+
+  }
+
+
 
   render() {
     const { loading, error, repos } = this.props;
@@ -42,6 +81,8 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
       repos,
     };
 
+
+    const text = {...messages.startProjectHeader};
     return (
       <article>
         <Helmet
@@ -53,7 +94,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         <div>
           <Section>
             <FormattedMessage {...messages.startProjectHeader} />
-            <TextSwitcher hol />
+            <TextSwitcher name={this.state.currentWord} />
           </Section>
         </div>
       </article>

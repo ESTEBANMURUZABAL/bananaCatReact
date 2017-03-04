@@ -20,7 +20,7 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
 
   render() {
     return (
-      <div>
+      <div style={container}>
         <Helmet
           title="Contact Page"
           meta={[
@@ -35,3 +35,7 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
     );
   }
 }
+
+const container = {
+  height: 740
+};

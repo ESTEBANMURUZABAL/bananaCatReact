@@ -7,12 +7,12 @@ export default styled.div`
    position:fixed;
 
 
-   height:70px;
+   height:60px;
 
    margin:0px auto;
    flex-direction: row;
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background-color: #2A2C39;
+  background-color: rgb(255, 64, 86);
 
    &--top {
        position: fixed;

@@ -20,7 +20,7 @@ export default class ServicesPage extends React.Component { // eslint-disable-li
 
   render() {
     return (
-      <div>
+      <div style={container}>
         <Helmet
           title="Services Page"
           meta={[
@@ -35,3 +35,7 @@ export default class ServicesPage extends React.Component { // eslint-disable-li
     );
   }
 }
+
+const container = {
+  height: 740
+};
