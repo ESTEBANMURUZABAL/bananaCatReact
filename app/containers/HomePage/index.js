@@ -16,7 +16,7 @@ import ReposList from 'components/ReposList';
 import Form from './Form';
 import AtPrefix from './AtPrefix';
 import Input from './Input';
-import Section from './Section';
+import Container from './Container';
 import messages from './messages';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
@@ -48,13 +48,6 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
       currentWord: '\xa0websites',
       i: 0,
     }
-
-  }
-
-  componentDidMount() {
-    if (this.props.username && this.props.username.trim().length > 0) {
-      this.props.onSubmitForm();
-    }
     this.changeWord();
   }
 
@@ -68,70 +61,35 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           this.state.i == wordsLenght ? this.state.i = 1 : this.state.i++;
       }
     }, 2000)
-
   }
 
-
-
   render() {
-    const { loading, error, repos } = this.props;
-    const reposListProps = {
-      loading,
-      error,
-      repos,
-    };
-
 
     const text = {...messages.startProjectHeader};
     return (
-      <article>
-        <Helmet
-          title="Home Page"
-          meta={[
-            { name: 'description', content: 'Banana Cat Ideas & Solutions' },
-          ]}
-        />
-        <div>
-          <Section>
-            <FormattedMessage {...messages.startProjectHeader} />
-            <TextSwitcher name={this.state.currentWord} />
-          </Section>
-        </div>
-      </article>
+          <Container>
+            <Helmet
+              title="Home Page"
+              meta={[
+                { name: 'description', content: 'Banana Cat Ideas & Solutions' },
+              ]}
+            />
+
+          <FormattedMessage {...messages.startProjectHeader} />
+          <TextSwitcher name={this.state.currentWord} />
+        </Container>
     );
   }
 }
 
-HomePage.propTypes = {
-  loading: React.PropTypes.bool,
-  error: React.PropTypes.oneOfType([
-    React.PropTypes.object,
-    React.PropTypes.bool,
-  ]),
-  repos: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.bool,
-  ]),
-  onSubmitForm: React.PropTypes.func,
-  username: React.PropTypes.string,
-  onChangeUsername: React.PropTypes.func,
-};
 
 export function mapDispatchToProps(dispatch) {
   return {
-    onChangeUsername: (evt) => dispatch(changeUsername(evt.target.value)),
-    onSubmitForm: (evt) => {
-      if (evt !== undefined && evt.preventDefault) evt.preventDefault();
-      dispatch(loadRepos());
-    },
   };
 }
 
 const mapStateToProps = createStructuredSelector({
-  repos: makeSelectRepos(),
-  username: makeSelectUsername(),
-  loading: makeSelectLoading(),
-  error: makeSelectError(),
+
 });
 
 // Wrap the component to inject dispatch and state into it

@@ -20,10 +20,12 @@ const AppWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   min-height: 100%;
+  height:100vh;
+width:100vw;
   padding: 0 16px;
   flex-direction: column;
   padding-top: 60px;
-  background-color: #2A2C39;
+
 `;
 
 
