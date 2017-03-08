@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-
+import styled from 'styled-components';
 
 class Mobile extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -14,3 +14,13 @@ class Mobile extends React.Component { // eslint-disable-line react/prefer-state
 }
 
 export default Mobile;
+
+const Container = styled.div`
+  text-align: center;
+  display: flex;
+  width:80%;
+  position: absolute;
+   border: 1px solid #666;
+   height:40%;
+ flex-direction: row;
+`;

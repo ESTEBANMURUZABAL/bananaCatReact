@@ -22,7 +22,6 @@ const AppWrapper = styled.div`
   min-height: 100%;
   height:100vh;
 width:100vw;
-  padding: 0 16px;
   flex-direction: column;
   padding-top: 60px;
 

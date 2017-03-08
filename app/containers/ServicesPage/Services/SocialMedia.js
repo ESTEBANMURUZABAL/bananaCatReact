@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import Container from './Container';
+import styled from 'styled-components';
 
 class SocialMedia extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -14,3 +14,13 @@ class SocialMedia extends React.Component { // eslint-disable-line react/prefer-
 }
 
 export default SocialMedia;
+
+const Container = styled.div`
+  text-align: center;
+  display: flex;
+  width:80%;
+  position: absolute;
+   border: 1px solid #666;
+   height:40%;
+ flex-direction: row;
+`;

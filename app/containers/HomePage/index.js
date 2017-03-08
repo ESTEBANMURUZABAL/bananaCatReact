@@ -16,11 +16,11 @@ import ReposList from 'components/ReposList';
 import Form from './Form';
 import AtPrefix from './AtPrefix';
 import Input from './Input';
-import Container from './Container';
 import messages from './messages';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
+import styled from 'styled-components';
 
 import TextSwitcher from 'components/TextSwitcher';
 
@@ -94,3 +94,23 @@ const mapStateToProps = createStructuredSelector({
 
 // Wrap the component to inject dispatch and state into it
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+
+
+const Container = styled.div`
+text-align: center;
+height:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+background-color: #2A2C39;
+  color: #fafafa;
+  width:100%;
+
+    text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+  font-family: Montserrat, Helvetica, Times, serif;
+  	letter-spacing: -.45rem;
+  	font-size: 6.853em;
+    font-weight: 900;
+    box-sizing: border-box;
+`;
