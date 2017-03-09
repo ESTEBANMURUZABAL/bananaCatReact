@@ -14,73 +14,52 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
           <div className="plan">
             <header><i className="ion-ios-navigate-outline"></i>
               <h4 className="plan-title">
-                Starter
+                Landing Page
               </h4>
               <div className="plan-cost"><span className="plan-price">$19</span><span className="plan-type">/month</span></div>
             </header>
             <ul className="plan-features">
-              <li>5GB Linux Web Space
-              </li>
-              <li>5 MySQL Databases
-              </li>
-              <li>Unlimited Email
-              </li>
-              <li>250Gb mo Transfer
-              </li>
-              <li>24/7 Tech Support
-              </li>
-              <li>Daily Backups
-              </li>
+              <li>Until 5 tabs or views</li>
+              <li>1 custom form</li>
+              <li>Design from templates</li>
+              <li>Custom text/colors</li>
             </ul>
             <div className="plan-select"><a href="">Select Plan</a></div>
           </div>
           <div className="plan">
             <header><i className="ion-ios-world"></i>
               <h4 className="plan-title">
-                Basic
+                Administrable
               </h4>
               <div className="plan-cost"><span className="plan-price">$29</span><span className="plan-type">/month</span></div>
             </header>
             <ul className="plan-features">
-              <li>10GB Linux Web Space
-              </li>
-              <li>10 MySQL Databases
-              </li>
-              <li>Unlimited Email
-              </li>
-              <li>500Gb mo Transfer
-              </li>
-              <li>24/7 Tech Support
-              </li>
-              <li>Daily Backups
-              </li>
+              <li>Until 15 tabs or views</li>
+              <li>2 custom form</li>
+              <li>User registration</li>
+              <li>Custom design</li>
+              <li>Google AdWords campaign</li>
+              <li>1 months support</li>
             </ul>
             <div className="plan-select"><a href="">Select Plan</a></div>
           </div>
           <div className="plan">
             <header><i className="ion-ios-people"></i>
               <h4 className="plan-title">
-                Professional
+                eCommerce
               </h4>
               <div className="plan-cost"><span className="plan-price">$49</span><span className="plan-type">/month</span></div>
             </header>
             <ul className="plan-features">
-              <li>25GB Linux Web Space
-              </li>
-              <li>25 MySQL Databases
-              </li>
-              <li>Unlimited Email
-              </li>
-              <li>2000Gb mo Transfer
-              </li>
-              <li>24/7 Tech Support
-              </li>
-              <li>Daily Backups
-              </li>
+              <li>Until 30 tabs or views</li>
+              <li>3 custom form</li>
+              <li>User registration and management</li>
+              <li>Custom design</li>
+              <li>Google AdWords campaign</li>
+              <li>3 months support</li>
             </ul>
             <div className="plan-select"><a href="">Select Plan</a></div>
           </div>
-
           </div>
         </Container>
       </div>
@@ -91,20 +70,6 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
 export default Websites;
 
 const Container = styled.div`
-  display: flex;
-  width:95%;
-  position: absolute;
-   height:40%;
-`;
+  width: 95%;
 
-const BoxContainer = styled.div`
-  width: 33%;
-  font-family: Montserrat, Helvetica, Times, serif;
-  padding:5%;
-  flex: 1;
-  display: flex;
-   justify-content:top;
-   align-content:center;
-   text-align:left;
-   border: 1px solid #666;
 `;

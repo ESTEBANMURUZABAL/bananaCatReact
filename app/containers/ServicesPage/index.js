@@ -23,8 +23,7 @@ export default class ServicesPage extends React.Component { // eslint-disable-li
           title="Services Page"
           meta={[{ name: 'description', content: 'Services page' },]}/>
 
-            <Tab/>
-
+          <Tab/>
       </Container>
     );
   }

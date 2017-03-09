@@ -37,7 +37,7 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
              {src: "https://use.fontawesome.com/20ab91acc4.js", type: "text/javascript"},
          ]}
         />
-          <h1 className="section-header">CONTACT</h1>
+          <h1 className="section-header">GET IN TOUCH & FOLLOW US</h1>
           <div className="contact-wrapper">
 
             <form className="form-horizontal" role="form" method="post" >

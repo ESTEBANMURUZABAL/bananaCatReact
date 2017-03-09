@@ -74,20 +74,19 @@ const Container = styled.div`
   width:100%;
   height: 100%;
  flex-direction: row;
+ font-family: 'Lato', sans-serif;
 `;
 
 const Service = styled.div`
   background: ${props => props.selected ? '#0091EA' : '#263238'};
-  font-family: "Open Sans", sans-serif;
+
 
   color:white;
 
   display: inline-block;
   width: 100%;
   padding: 1rem 2rem;
-
-
-  font-family: inherit;
+ font-family: 'Lato', sans-serif;
   font-size: 1rem;
   color: #fff;
   cursor: pointer;
@@ -120,7 +119,7 @@ position: absolute;
 right: 0px;
 width: 80%;
 height: 100%;
-font-family: Montserrat, Helvetica, Times, serif;
+font-family: 'Lato', sans-serif;
 padding-top:1%;
 padding-left:3%;
 padding-right:3%;

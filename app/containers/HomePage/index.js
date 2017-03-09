@@ -30,15 +30,11 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
 
     this.state = {
       words: [
-        '\xa0dank memes',
         '\xa0design mockups',
         '\xa0social content',
         '\xa0blogs & themes',
         '\xa0eCommerce sites',
-        '\xa0Open Source Software',
         '\xa0social media strategies',
-        '\xa0Photoshops of stuff',
-        '\xa0infographics & charts',
         '\xa0guides & tutorials',
         '\xa0product concepts',
         '\xa0logos & branding assets',

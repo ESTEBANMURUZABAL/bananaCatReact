@@ -44,7 +44,7 @@ const HeaderLink = styled(Link)`
     letter-spacing: 0.1rem;
 		transition: all 0.5s ease;
 		font-size: 1rem;
-    	font-family: 'Open Sans', 'Lato', sans-serif;
+    	font-family: 'Lato', sans-serif;
       text-decoration:none;
       color:white;
 	  &:hover {
@@ -61,7 +61,7 @@ const NavBar = styled.div`
 
    background-color: #2A2C39;
    height:60px;
-
+   font-family: 'Lato', sans-serif;
    margin:0px auto;
    flex-direction: row;
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);

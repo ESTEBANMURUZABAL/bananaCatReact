@@ -12,6 +12,7 @@ import messages from './messages';
 import List from './List';
 import ListItem from './ListItem';
 import ListItemTitle from './ListItemTitle';
+import style from './index.scss';
 
 export default class FeaturePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -23,7 +24,7 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
 
   render() {
     return (
-      <div style={container}>
+      <div className="cont">
         <Helmet
           title="Feature Page"
           meta={[
@@ -83,7 +84,3 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
     );
   }
 }
-
-const container = {
-  height: 740
-};
