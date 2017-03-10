@@ -40,17 +40,17 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
           <h1 className="section-header">GET IN TOUCH & FOLLOW US</h1>
           <div className="contact-wrapper">
 
-            <form className="form-horizontal" role="form" method="post" >
+            <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
 
               <div className="form-group">
                 <div className="col-sm-12">
-                  <input type="text" className="form-control" id="name" placeholder="NAME" name="name" value=""/>
+                  <input type="text" className="form-control" id="name" placeholder="NAME" name="name"/>
                 </div>
               </div>
 
               <div className="form-group">
                 <div className="col-sm-12">
-                  <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email" value=""/>
+                  <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email"/>
                 </div>
               </div>
 
@@ -62,8 +62,9 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
                 </div>
 
               </button>
-
+              <input type="hidden" name="_next" value="http://localhost:3000/contact" />
             </form>
+
 
 
               <div className="direct-contact-container">

@@ -8,6 +8,7 @@ class SocialMedia extends React.Component { // eslint-disable-line react/prefer-
       <div>
         <h1>SocialMedia</h1>
         <p>Manage your entire social lifecycle. From one dashboard you’ll schedule Tweets and Facebook posts, monitor conversations, and more. When you need to prove your social ROI, quickly create and customize ready-to-present analytics reports.</p>
+        <iframe src="https://docs.google.com/spreadsheets/d/1-TwW4Ah9hI22w4JAk6W4Px8uBjPZgrhOEOU9tG6uupM/pubhtml?widget=true&amp;headers=false"></iframe>
       </div>
     );
   }
