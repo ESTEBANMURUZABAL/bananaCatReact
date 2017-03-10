@@ -48,23 +48,24 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
   }
 
   changeWord() {
-      let wordsLenght = this.state.words.length;
-      setInterval(()=>{
+    let wordsLenght = this.state.words.length;
       if (this.state.i <= wordsLenght) {
           this.setState({
             currentWord: this.state.words[this.state.i]
           })
           this.state.i == wordsLenght ? this.state.i = 1 : this.state.i++;
       }
-    }, 2000)
   }
 
   componentDidMount() {
-      this.changeWord();
+      this.timerID = setInterval(
+      () => this.changeWord(),
+      2000
+    );
   }
 
   componentWillUnmount () {
-      this.changeWord && clearInterval(this.changeWord);
+       clearInterval(this.timerID);
   }
 
   render() {
