@@ -44,7 +44,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
       currentWord: '\xa0websites',
       i: 0,
     }
-    this.changeWord();
+
   }
 
   changeWord() {
@@ -59,8 +59,16 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     }, 2000)
   }
 
-  render() {
+  componentDidMount() {
+      this.changeWord();
+  }
 
+  componentWillUnmount () {
+      this.changeWord && clearInterval(this.changeWord);
+  }
+
+  render() {
+    let changeWord = this.state.currentWord || '';
     const text = {...messages.startProjectHeader};
     return (
           <Container>
@@ -72,24 +80,14 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             />
 
           <FormattedMessage {...messages.startProjectHeader} />
-          <TextSwitcher name={this.state.currentWord} />
+          <TextSwitcher name={changeWord} />
         </Container>
     );
   }
 }
 
-
-export function mapDispatchToProps(dispatch) {
-  return {
-  };
-}
-
-const mapStateToProps = createStructuredSelector({
-
-});
-
 // Wrap the component to inject dispatch and state into it
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default HomePage;
 
 
 const Container = styled.div`
