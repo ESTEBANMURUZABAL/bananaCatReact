@@ -19,12 +19,10 @@ const AppWrapper = styled.div`
   max-width: %100;
   margin: 0 auto;
   display: flex;
-  min-height: 100%;
   height:100vh;
-width:100vw;
+  width:100vw;
   flex-direction: column;
   padding-top: 60px;
-
 `;
 
 
@@ -41,10 +39,10 @@ export function App(props) {
 
       <AppWrapper>
         <Helmet
-          titleTemplate="%s - React.js Boilerplate"
-          defaultTitle="React.js Boilerplate"
+          titleTemplate="%s - BananaCatCo"
+          defaultTitle="BananaCatCo"
           meta={[
-            { name: 'description', content: 'A React.js Boilerplate application' },
+            { name: 'description', content: 'A BananaCatCo application' },
           ]}
         />
 

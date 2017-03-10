@@ -69,28 +69,18 @@ handleClick3(){
 }
 
 const Container = styled.div`
-  text-align: center;
-  display: flex;
-  width:100%;
-  height: 100%;
- flex-direction: row;
- font-family: 'Lato', sans-serif;
 `;
 
 const Service = styled.div`
   background: ${props => props.selected ? '#0091EA' : '#263238'};
 
-
-  color:white;
-
   display: inline-block;
   width: 100%;
   padding: 1rem 2rem;
- font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   color: #fff;
   cursor: pointer;
-
 &:hover {
   background: #37474F;
   transition: all 0.5s ease;
@@ -98,34 +88,17 @@ const Service = styled.div`
 `;
 
 const TabList = styled.div`
-position: absolute;
-left: 0px;
-width: 20%;
-height: 100%;
-
+  position: absolute;
+  width: 20%;
+  height: 100%;
   background: #263238;
-
-
-display: flex;
- justify-content:top;
- align-content:center;
- flex-direction:column;
- text-align:left;
-
+  text-align:left;
 `;
 
 const TabInfo = styled.div`
-position: absolute;
-right: 0px;
-width: 80%;
-height: 100%;
-font-family: 'Lato', sans-serif;
-padding-top:1%;
-padding-left:3%;
-padding-right:3%;
-
-   justify-content:top;
-   align-content:center;
-   flex-direction:column;
-   text-align: left;
+  position: absolute;
+  right: 0px;
+  width: 80%;
+  padding: 0 3% 0 3%;
+  text-align: left;
 `;

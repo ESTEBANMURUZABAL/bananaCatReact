@@ -32,7 +32,7 @@ export default class ServicesPage extends React.Component { // eslint-disable-li
 const Container = styled.div`
   text-align: center;
   display: flex;
-  width:100%;
+  width: 100%;
   height: 100%;
  flex-direction: column;
 `;
