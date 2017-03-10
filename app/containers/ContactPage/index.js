@@ -6,9 +6,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
-import H1 from 'components/H1';
 import messages from './messages';
-import s from './index.scss';
+import ContactStyle from './index.scss';
 
 export default class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -27,15 +26,6 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
             { name: 'description', content: 'Services page' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
-          link={[
-            {"rel": "stylesheet", "href": "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"},
-            {"rel": "stylesheet", "type":"text/css" ,"href": "https://fonts.googleapis.com/css?family=Lato:400,100,300"},
-            {"rel": "stylesheet", "href": "https://fonts.googleapis.com/css?family=Raleway:100,400,700"},
-            {"rel": "stylesheet", "href": "https://fonts.googleapis.com/css?family=Oswald:200,400,700"},
-          ]}
-          script={[
-             {src: "https://use.fontawesome.com/20ab91acc4.js", type: "text/javascript"},
-         ]}
         />
           <h1 className="section-header">GET IN TOUCH & FOLLOW US</h1>
           <div className="contact-wrapper">

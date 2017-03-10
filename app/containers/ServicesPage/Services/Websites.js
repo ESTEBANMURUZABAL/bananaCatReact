@@ -8,8 +8,7 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
     return (
       <div>
         <h1>Desarrollo Web Profesional</h1>
-        <p>BananaCatCo. ofrece servicios de Diseño Web, Desarrollo Web, y Aplicaciones Web. Ofrecemos planes de Diseño Web a los mejores precios del mercado, nuestras diferentes soluciones web permiten a las empresas contar con una página web desde U$300. Todos nuestros planes de diseño web Incluyen: Registro de Dominio, Diseño Web, Aplicaciones Web, Hosting y Soporte Técnico Especializado. Utilizamos las ultimas tecnologías para el desarrollo y diseño de cada página web, ofreciendo a nuestros clientes páginas de Internet funcionales y modernas.</p>
-        <Container>
+        <p>BananaCatCo. ofrece servicios de diseño y desarrollo de aplicaciones Web. Ofrecemos planes de Diseño Web a los mejores precios del mercado. Todos nuestros planes de diseño web Incluyen: Registro de Dominio, Diseño Web, Hosting y Soporte Técnico Especializado. Utilizamos las ultimas tecnologías para el desarrollo y diseño de cada página web, ofreciendo a nuestros clientes páginas de Internet funcionales y modernas.</p>
           <div className="snip1265">
           <div className="plan">
             <header><i className="ion-ios-navigate-outline"></i>
@@ -61,15 +60,9 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
             <div className="plan-select"><a href="">Select Plan</a></div>
           </div>
           </div>
-        </Container>
       </div>
     );
   }
 }
 
 export default Websites;
-
-const Container = styled.div`
-  width: 95%;
-
-`;

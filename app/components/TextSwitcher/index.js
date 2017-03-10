@@ -1,24 +1,9 @@
 import React from 'react';
-
-import Item from './Item';
-import Section from './Section';
-import Wrapper from './Wrapper';
-
+import style from './style.scss';
 
 export default class TextSwitcher extends React.Component {
   constructor(props) {
     super(props)
-
-
-    this.state = {
-      words: [
-        '\xa0websites',
-        '\xa0social media',
-        '\xa0mobile apps'
-      ],
-      currentWord: '',
-      i: 0,
-    }
 
   }
 
@@ -27,9 +12,9 @@ export default class TextSwitcher extends React.Component {
     // This must be exactly one element or it will warn.
     const name = this.props.name;
     return (
-      <Wrapper>
+      <div className="container">
         {name}
-      </Wrapper>
+      </div>
     );
   }
 }

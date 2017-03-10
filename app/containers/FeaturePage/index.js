@@ -7,12 +7,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
-import H1 from 'components/H1';
 import messages from './messages';
 import List from './List';
 import ListItem from './ListItem';
 import ListItemTitle from './ListItemTitle';
-import style from './index.scss';
+import FeatureStyle from './index.scss';
 
 export default class FeaturePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -24,16 +23,14 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
 
   render() {
     return (
-      <div className="cont">
+      <div className="feature-container">
         <Helmet
           title="Feature Page"
           meta={[
             { name: 'description', content: 'Feature page of React.js Boilerplate application' },
           ]}
         />
-        <H1>
-          <FormattedMessage {...messages.header} />
-        </H1>
+        <h1><FormattedMessage {...messages.header} /></h1>
         <List>
           <ListItem>
             <ListItemTitle>

@@ -11,20 +11,13 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
-import H2 from 'components/H2';
-import ReposList from 'components/ReposList';
-import Form from './Form';
-import AtPrefix from './AtPrefix';
-import Input from './Input';
 import messages from './messages';
-import { loadRepos } from '../App/actions';
-import { changeUsername } from './actions';
-import { makeSelectUsername } from './selectors';
 import styled from 'styled-components';
+import { Link } from 'react-router';
 
 import TextSwitcher from 'components/TextSwitcher';
 
-export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props)
 
@@ -34,17 +27,16 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         '\xa0social content',
         '\xa0blogs & themes',
         '\xa0eCommerce sites',
-        '\xa0social media strategies',
         '\xa0guides & tutorials',
         '\xa0product concepts',
         '\xa0logos & branding assets',
+        '\xa0social media strategies',
         '\xa0original content',
         '\xa0real shit happen'
       ],
       currentWord: '\xa0websites',
       i: 0,
     }
-
   }
 
   changeWord() {
@@ -79,17 +71,19 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
                 { name: 'description', content: 'Banana Cat Ideas & Solutions' },
               ]}
             />
-
-          <FormattedMessage {...messages.startProjectHeader} />
-          <TextSwitcher name={changeWord} />
+          <TitleLink to="/services">
+            <FormattedMessage {...messages.startProjectHeader} />
+            <TextSwitcher name={changeWord} />
+          </TitleLink>
         </Container>
     );
   }
 }
 
-// Wrap the component to inject dispatch and state into it
-export default HomePage;
-
+const TitleLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+`;
 
 const Container = styled.div`
 text-align: center;
