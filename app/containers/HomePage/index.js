@@ -23,13 +23,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
 
     this.state = {
       words: [
-        '\xa0design mockups',
         '\xa0social content',
         '\xa0blogs & themes',
         '\xa0eCommerce sites',
         '\xa0guides & tutorials',
         '\xa0product concepts',
         '\xa0logos & branding assets',
+        '\xa0design mockups',
         '\xa0social media strategies',
         '\xa0original content',
         '\xa0real shit happen'

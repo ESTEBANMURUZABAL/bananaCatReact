@@ -85,7 +85,7 @@ const Service = styled.div`
   color: #fff;
   cursor: pointer;
 &:hover {
-  background: #37474F;
+  background: ${props => props.selected ? '#0091EA' : '#37474F'};
   transition: all 0.5s ease;
 }
 `;
@@ -96,10 +96,12 @@ const TabList = styled.div`
   height: 100%;
   background: #263238;
   text-align:left;
+  font-family: 'Lato', sans-serif;
 `;
 
 const TabInfo = styled.div`
   position: fixed;
+  align-content: space-around;
   right: 0px;
   width: 80%;
   padding: 0 3% 0 3%;
