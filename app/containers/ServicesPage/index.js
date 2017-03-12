@@ -7,7 +7,7 @@ import Websites from './Services/Websites';
 import SocialMedia from './Services/SocialMedia';
 import Mobile from './Services/Mobile';
 import messages from './messages';
-import style from './index.scss';
+import './index.scss';
 
 export default class ServicesPage extends React.Component {
   constructor(props) {

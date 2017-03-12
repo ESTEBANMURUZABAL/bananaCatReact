@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import s from './Websites.scss';
+import './Websites.scss';
 
 class Websites extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -11,9 +11,7 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
         <div className="snip1265">
         <div className="plan">
           <header><i className="ion-ios-navigate-outline"></i>
-            <h4 className="plan-title">
-              Landing Page
-            </h4>
+            <h4 className="plan-title">Landing Page</h4>
             <div className="plan-cost"><span className="plan-price">$19</span><span className="plan-type">/month</span></div>
           </header>
           <ul className="plan-features">
@@ -26,9 +24,7 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
         </div>
         <div className="plan">
           <header><i className="ion-ios-world"></i>
-            <h4 className="plan-title">
-              Administrable
-            </h4>
+            <h4 className="plan-title">Administrable</h4>
             <div className="plan-cost"><span className="plan-price">$29</span><span className="plan-type">/month</span></div>
           </header>
           <ul className="plan-features">
@@ -43,9 +39,7 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
         </div>
         <div className="plan">
           <header><i className="ion-ios-people"></i>
-            <h4 className="plan-title">
-              eCommerce
-            </h4>
+            <h4 className="plan-title">eCommerce</h4>
             <div className="plan-cost"><span className="plan-price">$49</span><span className="plan-type">/month</span></div>
           </header>
           <ul className="plan-features">

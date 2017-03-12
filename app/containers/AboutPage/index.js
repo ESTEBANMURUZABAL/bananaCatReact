@@ -7,7 +7,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
-import AboutStyle from './AboutStyle.scss';
+import './AboutStyle.scss';
 
 export default class AboutPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
