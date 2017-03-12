@@ -12,49 +12,37 @@ import './index.scss';
 export default class ServicesPage extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick1 = this.handleClick1.bind(this);
-    this.handleClick2 = this.handleClick2.bind(this);
-    this.handleClick3 = this.handleClick3.bind(this);
+    this.handleClick = this.handleClick.bind(this);
 
     this.state = {
-      serviceId: '1',
-      isWebsiteActive: true,
-      isSocialActive: false,
-      isMobileActive: false,
+      serviceId: 0,
     };
   }
 
-  handleClick1() {
-    this.setState({ serviceId: 1, isWebsiteActive: true, isSocialActive: false, isMobileActive: false });
+  handleClick(index) {
+    this.setState({ serviceId: index });
   }
 
-  handleClick2() {
-    this.setState({ serviceId: 2, isSocialActive: true, isWebsiteActive: false, isMobileActive: false });
-  }
-
-  handleClick3() {
-    this.setState({ serviceId: 3, isMobileActive: true, isWebsiteActive: false, isSocialActive: false });
-  }
   render() {
     const serviceId = this.state.serviceId;
 
     let tabInfo;
     let tabTitle;
-    if (serviceId===1) {
+    if (serviceId===0) {
       tabInfo = <Websites />;
-      tabTitle = (<div><Service selected onClick={this.handleClick1}>Websites</Service>
-      <Service onClick={this.handleClick2}>Social Media Management</Service>
-      <Service onClick={this.handleClick3}>Mobile Applications</Service></div>)
-    } else if (serviceId===2) {
+      tabTitle = (<div><Service selected onClick={() => this.handleClick(0)}>Websites</Service>
+      <Service onClick={() => this.handleClick(1)}>Social Media Management</Service>
+      <Service onClick={() => this.handleClick(2)}>Mobile Applications</Service></div>)
+    } else if (serviceId===1) {
       tabInfo = <SocialMedia />;
-      tabTitle = (<div><Service onClick={this.handleClick1}>Websites</Service>
-      <Service selected onClick={this.handleClick2}>Social Media Management</Service>
-      <Service onClick={this.handleClick3}>Mobile Applications</Service></div>)
-    } else {
+      tabTitle = (<div><Service onClick={() => this.handleClick(0)}>Websites</Service>
+      <Service selected onClick={() => this.handleClick(1)}>Social Media Management</Service>
+      <Service onClick={() => this.handleClick(2)}>Mobile Applications</Service></div>)
+    } else if (serviceId===2) {
       tabInfo = <Mobile />;
-      tabTitle = (<div><Service onClick={this.handleClick1}>Websites</Service>
-      <Service onClick={this.handleClick2}>Social Media Management</Service>
-      <Service selected onClick={this.handleClick3}>Mobile Applications</Service></div>)
+      tabTitle = (<div><Service onClick={() => this.handleClick(0)}>Websites</Service>
+      <Service onClick={() => this.handleClick(1)}>Social Media Management</Service>
+      <Service selected onClick={() => this.handleClick(2)}>Mobile Applications</Service></div>)
     }
 
     return (
