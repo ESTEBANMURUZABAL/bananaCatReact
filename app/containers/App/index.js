@@ -1,9 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
-
 import Header from 'components/Header';
-import Footer from 'components/Footer';
 import withProgressBar from 'components/ProgressBar';
 import { StickyContainer, Sticky } from 'react-sticky';
 
@@ -22,12 +20,11 @@ const AppWrapper = styled.div`
 export function App(props) {
   return (
     <div>
-    <StickyContainer>
+      <StickyContainer>
         <Sticky>
           <Header />
         </Sticky>
       </StickyContainer>
-
       <AppWrapper>
         <Helmet
           titleTemplate="%s - React.js Boilerplate"
@@ -36,10 +33,9 @@ export function App(props) {
             { name: 'description', content: 'A React.js Boilerplate application' },
           ]}
         />
-
         {React.Children.toArray(props.children)}
       </AppWrapper>
-      </div>
+    </div>
   );
 }
 

@@ -2,12 +2,6 @@ import React from 'react';
 import style from './style.scss';
 
 export default class TextSwitcher extends React.Component {
-  constructor(props) {
-    super(props)
-
-  }
-
-
   render() {
     // This must be exactly one element or it will warn.
     const name = this.props.name;
@@ -20,5 +14,5 @@ export default class TextSwitcher extends React.Component {
 }
 
 TextSwitcher.propTypes = {
-  name: React.PropTypes.string.isRequired
+  name: React.PropTypes.string.isRequired,
 };

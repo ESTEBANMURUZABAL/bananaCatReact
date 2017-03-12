@@ -14,8 +14,4 @@ export default defineMessages({
     id: 'boilerplate.containers.HomePage.start_project.message1',
     defaultMessage: 'websites',
   },
-  startProjectMessage: {
-    id: 'boilerplate.containers.HomePage.start_project.message2',
-    defaultMessage: 'mobile apps',
-  },
 });

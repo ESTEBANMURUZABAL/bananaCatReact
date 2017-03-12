@@ -11,7 +11,7 @@ import style from './index.scss';
 
 export default class ServicesPage extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.handleClick1 = this.handleClick1.bind(this);
     this.handleClick2 = this.handleClick2.bind(this);
     this.handleClick3 = this.handleClick3.bind(this);
@@ -20,54 +20,55 @@ export default class ServicesPage extends React.Component {
       serviceId: '1',
       isWebsiteActive: true,
       isSocialActive: false,
-      isMobileActive: false
-    }
+      isMobileActive: false,
+    };
   }
 
   handleClick1() {
-      this.setState({serviceId: 1, isWebsiteActive: true, isSocialActive: false, isMobileActive: false});
- }
+    this.setState({ serviceId: 1, isWebsiteActive: true, isSocialActive: false, isMobileActive: false });
+  }
 
- handleClick2() {
-     this.setState({serviceId: 2, isSocialActive: true, isWebsiteActive: false, isMobileActive: false});
-}
+  handleClick2() {
+    this.setState({ serviceId: 2, isSocialActive: true, isWebsiteActive: false, isMobileActive: false });
+  }
 
-handleClick3(){
-    this.setState({serviceId: 3, isMobileActive: true, isWebsiteActive: false, isSocialActive: false});
-
-}
+  handleClick3() {
+    this.setState({ serviceId: 3, isMobileActive: true, isWebsiteActive: false, isSocialActive: false });
+  }
   render() {
     const serviceId = this.state.serviceId;
 
     let tabInfo;
     let tabTitle;
-    if (serviceId==1) {
-      tabInfo = <Websites/>
-      tabTitle = <div><Service selected onClick={this.handleClick1}>Websites</Service>
+    if (serviceId===1) {
+      tabInfo = <Websites />;
+      tabTitle = (<div><Service selected onClick={this.handleClick1}>Websites</Service>
       <Service onClick={this.handleClick2}>Social Media Management</Service>
-      <Service onClick={this.handleClick3}>Mobile Applications</Service></div>
-    } else if(serviceId==2){
-      tabInfo = <SocialMedia/>
-      tabTitle = <div><Service onClick={this.handleClick1}>Websites</Service>
+      <Service onClick={this.handleClick3}>Mobile Applications</Service></div>)
+    } else if (serviceId===2) {
+      tabInfo = <SocialMedia />;
+      tabTitle = (<div><Service onClick={this.handleClick1}>Websites</Service>
       <Service selected onClick={this.handleClick2}>Social Media Management</Service>
-      <Service onClick={this.handleClick3}>Mobile Applications</Service></div>
+      <Service onClick={this.handleClick3}>Mobile Applications</Service></div>)
     } else {
-      tabInfo = <Mobile/>
-      tabTitle = <div><Service onClick={this.handleClick1}>Websites</Service>
+      tabInfo = <Mobile />;
+      tabTitle = (<div><Service onClick={this.handleClick1}>Websites</Service>
       <Service onClick={this.handleClick2}>Social Media Management</Service>
-      <Service selected onClick={this.handleClick3}>Mobile Applications</Service></div>
+      <Service selected onClick={this.handleClick3}>Mobile Applications</Service></div>)
     }
 
     return (
       <div>
         <Helmet
           title="Services Page"
-          meta={[{ name: 'description', content: 'Services page' },]}/>
+          meta={[{ name: 'description', content: 'Services page' },
+                ]}
+        />
         <TabList>
           {tabTitle}
         </TabList>
         <TabInfo>
-            {tabInfo}
+          {tabInfo}
         </TabInfo>
       </div>
     );
@@ -76,7 +77,6 @@ handleClick3(){
 
 const Service = styled.div`
   background: ${props => props.selected ? '#0091EA' : '#263238'};
-
   display: inline-block;
   width: 100%;
   padding: 1rem 2rem;
@@ -84,10 +84,10 @@ const Service = styled.div`
   font-size: 1rem;
   color: #fff;
   cursor: pointer;
-&:hover {
-  background: ${props => props.selected ? '#0091EA' : '#37474F'};
-  transition: all 0.5s ease;
-}
+  &:hover {
+    background: ${props => props.selected ? '#0091EA' : '#37474F'};
+    transition: all 0.5s ease;
+  }
 `;
 
 const TabList = styled.div`
