@@ -50,7 +50,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         this.setState({
           currentWord: this.state.words[this.state.i]
         })
-        this.state.i === wordsLenght ? this.state.i = 1 : this.state.i++;
+        this.state.i === wordsLenght ? this.state.i = 0 : this.state.i++;
       }
   }
 
@@ -65,7 +65,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           ]}
         />
         <TitleLink to="/services">
-          <FormattedMessage {...messages.startProjectHeader} />
+          <FormattedMessage {...messages.word0} />
           <TextSwitcher name={changeWord} />
         </TitleLink>
       </Container>

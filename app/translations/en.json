@@ -1,14 +1,48 @@
 {
-  "boilerplate.components.Footer.author.message": "Made with love by {author}.",
-  "boilerplate.components.Footer.license.message": "This project is licensed under the MIT license.",
   "boilerplate.components.Header.features": "Features",
   "boilerplate.components.Header.services": "Services",
   "boilerplate.components.Header.contact": "Contact",
   "boilerplate.components.Header.about": "About us",
   "boilerplate.components.Header.home": "Home",
-  "boilerplate.containers.ServicesPage.header": "Services",
+
+  "boilerplate.containers.ServicesPage.selectPlan": "Select Plan",
+
+  "boilerplate.containers.ServicesPage.websitesTab": "Websites",
+  "boilerplate.containers.ServicesPage.websitesTab.title": "Professional web development",
+  "boilerplate.containers.ServicesPage.websitesTab.content": "BananaCatCo. offers design services and Web application development. Ofrecemos planes de Diseño Web a los mejores precios del mercado. Todos nuestros planes de diseño web Incluyen: Registro de Dominio, Diseño Web, Hosting y Soporte Técnico Especializado. Utilizamos las ultimas tecnologías para el desarrollo y diseño de cada página web, ofreciendo a nuestros clientes páginas de Internet funcionales y modernas.",
+  "boilerplate.containers.ServicesPage.websitesTab.price1": "USD 250",
+  "boilerplate.containers.ServicesPage.websitesTab.price2": "USD 450",
+  "boilerplate.containers.ServicesPage.websitesTab.price3": "USD 625",
+  "boilerplate.containers.ServicesPage.websitesTab.price4": "USD ?",
+
+  "boilerplate.containers.ServicesPage.socialTab": "Social Media Management",
+  "boilerplate.containers.ServicesPage.socialTab.title": "Social Media",
+  "boilerplate.containers.ServicesPage.socialTab.content": "Manage your entire social lifecycle. From one dashboard you’ll schedule Tweets and Facebook posts, monitor conversations, and more. When you need to prove your social ROI, quickly create and customize ready-to-present analytics reports.",
+  "boilerplate.containers.ServicesPage.socialTab.price1": "USD 250",
+  "boilerplate.containers.ServicesPage.socialTab.price2": "USD 450",
+  "boilerplate.containers.ServicesPage.socialTab.price3": "USD 625",
+  "boilerplate.containers.ServicesPage.socialTab.price4": "USD ?",
+
+  "boilerplate.containers.ServicesPage.mobileTab": "Mobile Application development",
+  "boilerplate.containers.ServicesPage.mobileTab.title": "Mobile",
+  "boilerplate.containers.ServicesPage.mobileTab.content": "Having created several iOS and Android apps, designing for mobile is right up alley. We know every pixel is valuable on mobile devices and know how to make the most pretty and intuitive apps.",
+  "boilerplate.containers.ServicesPage.mobileTab.price1": "USD 250",
+  "boilerplate.containers.ServicesPage.mobileTab.price2": "USD 450",
+  "boilerplate.containers.ServicesPage.mobileTab.price3": "USD 625",
+  "boilerplate.containers.ServicesPage.mobileTab.price4": "USD ?",
+
+  "boilerplate.containers.ServicesPage.mobileAppsTab": "Mobile Apps Services",
+  "boilerplate.containers.ServicesPage.mobileAppsTab.title": "Mobile Apps Monthly Services",
+  "boilerplate.containers.ServicesPage.mobileAppsTab.content": "Having created several iOS and Android apps, designing for mobile is right up alley. We know every pixel is valuable on mobile devices and know how to make the most pretty and intuitive apps.",
+
   "boilerplate.containers.AboutPage.header": "About us",
-  "boilerplate.containers.ContactPage.header": "Contact us",
+  "boilerplate.containers.AboutPage.content": "We are BananaCatCo, a company that makes clean, modern websites and applications with the most kickass technology. I focus on User Experience and desiging intuitive, enjoyable products. More broadly, I provide Graphic Design, Social Media, Video Editing, Web Design & Development, Advertising and many other creative solutions for businesses large & small as well as non-profits and individuals.",
+
+  "boilerplate.containers.ContactPage.contactTitle": "Get in touch",
+  "boilerplate.containers.ContactPage.name": "NAME",
+  "boilerplate.containers.ContactPage.email": "EMAIL",
+  "boilerplate.containers.ContactPage.message": "MESSAGE",
+
   "boilerplate.containers.FeaturePage.css.header": "Features",
   "boilerplate.containers.FeaturePage.css.message": "Next generation CSS",
   "boilerplate.containers.FeaturePage.feedback.header": "Instant feedback",
@@ -26,13 +60,12 @@
   "boilerplate.containers.FeaturePage.scaffolding.message": "Automate the creation of components, containers, routes, selectors\n  and sagas - and their tests - right from the CLI!",
   "boilerplate.containers.FeaturePage.state_management.header": "Predictable state management",
   "boilerplate.containers.FeaturePage.state_management.message": "Unidirectional data flow allows for change logging and time travel\n    debugging.",
-  "boilerplate.containers.HomePage.start_project.header": "We make",
+
+  "boilerplate.containers.HomePage.word0": "We make",
   "boilerplate.containers.HomePage.start_project.message1": " websites",
-  "boilerplate.containers.HomePage.start_project.message2": " mobile apps",
-  "boilerplate.containers.HomePage.tryme.atPrefix": "@",
-  "boilerplate.containers.HomePage.tryme.header": "Try me!",
-  "boilerplate.containers.HomePage.tryme.message": "Show Github repositories by",
-  "boilerplate.containers.LocaleToggle.de": "de",
+  "boilerplate.containers.HomePage.word1": "%x20social content",
+
+  "boilerplate.containers.LocaleToggle.es": "es",
   "boilerplate.containers.LocaleToggle.en": "en",
   "boilerplate.containers.NotFoundPage.header": "Page not found."
 }

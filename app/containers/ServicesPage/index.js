@@ -30,19 +30,19 @@ export default class ServicesPage extends React.Component {
     let tabTitle;
     if (serviceId===0) {
       tabInfo = <Websites />;
-      tabTitle = (<div><Service selected onClick={() => this.handleClick(0)}>Websites</Service>
-      <Service onClick={() => this.handleClick(1)}>Social Media Management</Service>
-      <Service onClick={() => this.handleClick(2)}>Mobile Applications</Service></div>)
+      tabTitle = (<div><Service selected onClick={() => this.handleClick(0)}><FormattedMessage {...messages.websitesTab} /></Service>
+      <Service onClick={() => this.handleClick(1)}><FormattedMessage {...messages.socialTab} /></Service>
+      <Service onClick={() => this.handleClick(2)}><FormattedMessage {...messages.mobileTab} /></Service></div>)
     } else if (serviceId===1) {
       tabInfo = <SocialMedia />;
-      tabTitle = (<div><Service onClick={() => this.handleClick(0)}>Websites</Service>
-      <Service selected onClick={() => this.handleClick(1)}>Social Media Management</Service>
-      <Service onClick={() => this.handleClick(2)}>Mobile Applications</Service></div>)
+      tabTitle = (<div><Service onClick={() => this.handleClick(0)}><FormattedMessage {...messages.websitesTab} /></Service>
+      <Service selected onClick={() => this.handleClick(1)}><FormattedMessage {...messages.socialTab} /></Service>
+      <Service onClick={() => this.handleClick(2)}><FormattedMessage {...messages.mobileTab} /></Service></div>)
     } else if (serviceId===2) {
       tabInfo = <Mobile />;
-      tabTitle = (<div><Service onClick={() => this.handleClick(0)}>Websites</Service>
-      <Service onClick={() => this.handleClick(1)}>Social Media Management</Service>
-      <Service selected onClick={() => this.handleClick(2)}>Mobile Applications</Service></div>)
+      tabTitle = (<div><Service onClick={() => this.handleClick(0)}><FormattedMessage {...messages.websitesTab} /></Service>
+      <Service onClick={() => this.handleClick(1)}><FormattedMessage {...messages.socialTab} /></Service>
+      <Service selected onClick={() => this.handleClick(2)}><FormattedMessage {...messages.mobileTab} /></Service></div>)
     }
 
     return (
@@ -79,7 +79,7 @@ const Service = styled.div`
 
 const TabList = styled.div`
   position:fixed;
-  width: 20%;
+  width: 18%;
   height: 100%;
   background: #263238;
   text-align:left;
@@ -90,7 +90,7 @@ const TabInfo = styled.div`
   position: fixed;
   align-content: space-around;
   right: 0px;
-  width: 80%;
+  width: 82%;
   padding: 0 3% 0 3%;
   text-align: left;
 `;

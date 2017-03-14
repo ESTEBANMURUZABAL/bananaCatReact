@@ -26,10 +26,7 @@ export default class AboutPage extends React.Component { // eslint-disable-line 
         <div className="title-about">
           <FormattedMessage {...messages.header} />
         </div>
-        <div>We are BananaCatCo, a company that makes clean, modern websites and applications
-        with the most kickass technology. I focus on User Experience and desiging intuitive, enjoyable
-        products. More broadly, I provide Graphic Design, Social Media, Video Editing, Web Design & Development,
-         Advertising and many other creative solutions for businesses large & small as well as non-profits and individuals.</div>
+        <div><FormattedMessage {...messages.content} /></div>
       </div>
     );
   }

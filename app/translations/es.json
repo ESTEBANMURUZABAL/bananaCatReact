@@ -1,0 +1,67 @@
+{
+  "boilerplate.components.Header.features": "Cosas",
+  "boilerplate.components.Header.services": "Servicios",
+  "boilerplate.components.Header.contact": "Contacto",
+  "boilerplate.components.Header.about": "Nosotros",
+  "boilerplate.components.Header.home": "Inicio",
+
+  "boilerplate.containers.ServicesPage.selectPlan": "Elegir Plan",
+
+  "boilerplate.containers.ServicesPage.websitesTab": "Paginas web",
+  "boilerplate.containers.ServicesPage.websitesTab.title": "Desarrollo Web Profesional",
+  "boilerplate.containers.ServicesPage.websitesTab.content": "BananaCatCo. ofrece servicios de diseño y desarrollo de aplicaciones Web. Ofrecemos planes de Diseño Web a los mejores precios del mercado. Todos nuestros planes de diseño web Incluyen: Registro de Dominio, Diseño Web, Hosting y Soporte Técnico Especializado. Utilizamos las ultimas tecnologías para el desarrollo y diseño de cada página web, ofreciendo a nuestros clientes páginas de Internet funcionales y modernas.",
+  "boilerplate.containers.ServicesPage.websitesTab.price1": "ARS 4000",
+  "boilerplate.containers.ServicesPage.websitesTab.price2": "ARS 7000",
+  "boilerplate.containers.ServicesPage.websitesTab.price3": "ARS 10000",
+  "boilerplate.containers.ServicesPage.websitesTab.price4": "ARS ?",
+
+  "boilerplate.containers.ServicesPage.socialTab": "Manejo de redes sociales",
+  "boilerplate.containers.ServicesPage.socialTab.title": "Redes sociales",
+  "boilerplate.containers.ServicesPage.socialTab.content": "Manejamos tu cartera de redes sociales. From one dashboard you’ll schedule Tweets and Facebook posts, monitor conversations, and more. When you need to prove your social ROI, quickly create and customize ready-to-present analytics reports.",
+  "boilerplate.containers.ServicesPage.socialTab.price1": "ARS 4000",
+  "boilerplate.containers.ServicesPage.socialTab.price2": "ARS 7000",
+  "boilerplate.containers.ServicesPage.socialTab.price3": "ARS 10000",
+  "boilerplate.containers.ServicesPage.socialTab.price4": "ARS ?",
+
+  "boilerplate.containers.ServicesPage.mobileTab": "Aplicaciones para celulares",
+  "boilerplate.containers.ServicesPage.mobileTab.title": "Aplicaciones",
+  "boilerplate.containers.ServicesPage.mobileTab.content": "Habiendo created several iOS and Android apps, designing for mobile is right up alley. We know every pixel is valuable on mobile devices and know how to make the most pretty and intuitive apps.",
+  "boilerplate.containers.ServicesPage.mobileTab.price1": "ARS 4000",
+  "boilerplate.containers.ServicesPage.mobileTab.price2": "ARS 7000",
+  "boilerplate.containers.ServicesPage.mobileTab.price3": "ARS 10000",
+  "boilerplate.containers.ServicesPage.mobileTab.price4": "ARS ?",
+
+  "boilerplate.containers.AboutPage.header": "Sobre nosotros",
+  "boilerplate.containers.AboutPage.content": "Somos BananaCatCo, a company that makes clean, modern websites and applications with the most kickass technology. I focus on User Experience and desiging intuitive, enjoyable products. More broadly, I provide Graphic Design, Social Media, Video Editing, Web Design & Development, Advertising and many other creative solutions for businesses large & small as well as non-profits and individuals.",
+
+  "boilerplate.containers.ContactPage.contactTitle": "Contactanos",
+  "boilerplate.containers.ContactPage.name": "NOMBRE",
+  "boilerplate.containers.ContactPage.email": "CORREO",
+  "boilerplate.containers.ContactPage.message": "MENSAJE",
+
+  "boilerplate.containers.FeaturePage.css.header": "Features",
+  "boilerplate.containers.FeaturePage.css.message": "Next generation CSS",
+  "boilerplate.containers.FeaturePage.feedback.header": "Instant feedback",
+  "boilerplate.containers.FeaturePage.feedback.message": "Enjoy the best DX and code your app at the speed of thought! Your\n    saved changes to the CSS and JS are reflected instantaneously\n    without refreshing the page. Preserve application state even when\n    you update something in the underlying code!",
+  "boilerplate.containers.FeaturePage.header": "Features",
+  "boilerplate.containers.FeaturePage.internationalization.header": "Complete i18n Standard Internationalization & Pluralization",
+  "boilerplate.containers.FeaturePage.internationalization.message": "Scalable apps need to support multiple languages, easily add and support multiple languages with `react-intl`.",
+  "boilerplate.containers.FeaturePage.javascript.header": "Next generation JavaScript",
+  "boilerplate.containers.FeaturePage.javascript.message": "Use template strings, object destructuring, arrow functions, JSX\n    syntax and more, today.",
+  "boilerplate.containers.FeaturePage.network.header": "Offline-first",
+  "boilerplate.containers.FeaturePage.network.message": "The next frontier in performant web apps: availability without a\n      network connection from the instant your users load the app.",
+  "boilerplate.containers.FeaturePage.routing.header": "Industry-standard routing",
+  "boilerplate.containers.FeaturePage.routing.message": "Write composable CSS that's co-located with your components for\n    complete modularity. Unique generated class names keep the\n    specificity low while eliminating style clashes. Ship only the\n    styles that are on the page for the best performance.",
+  "boilerplate.containers.FeaturePage.scaffolding.header": "Quick scaffolding",
+  "boilerplate.containers.FeaturePage.scaffolding.message": "Automate the creation of components, containers, routes, selectors\n  and sagas - and their tests - right from the CLI!",
+  "boilerplate.containers.FeaturePage.state_management.header": "Predictable state management",
+  "boilerplate.containers.FeaturePage.state_management.message": "Unidirectional data flow allows for change logging and time travel\n    debugging.",
+
+  "boilerplate.containers.HomePage.word0": "Hacemos",
+  "boilerplate.containers.HomePage.start_project.message1": " websites",
+  "boilerplate.containers.HomePage.start_project.message2": " mobile apps",
+
+  "boilerplate.containers.LocaleToggle.es": "es",
+  "boilerplate.containers.LocaleToggle.en": "en",
+  "boilerplate.containers.NotFoundPage.header": "Page not found."
+}

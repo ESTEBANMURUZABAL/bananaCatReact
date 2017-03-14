@@ -6,12 +6,12 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  startProjectHeader: {
-    id: 'boilerplate.containers.HomePage.start_project.header',
+  word0: {
+    id: 'boilerplate.containers.HomePage.word0',
     defaultMessage: 'We make',
   },
-  startProjectMessage: {
-    id: 'boilerplate.containers.HomePage.start_project.message1',
-    defaultMessage: 'websites',
+  title1: {
+    id: 'boilerplate.containers.HomePage.word1',
+    defaultMessage: '\xa0social content',
   },
 });

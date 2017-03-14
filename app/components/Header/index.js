@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Link } from 'react-router';
 import style from './index.scss';
-
+import LocaleToggle from 'containers/LocaleToggle';
 import messages from './messages';
 
 export default class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -39,6 +39,7 @@ export default class Header extends React.Component { // eslint-disable-line rea
           <HeaderLink to="about" index={4} isActive={this.state.activeIndex===4} onClick={this.handleClick.bind(this)}>
             <FormattedMessage {...messages.about} />
           </HeaderLink>
+          <LocaleToggle />
         </div>
     );
   }

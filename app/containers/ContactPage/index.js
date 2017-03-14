@@ -19,7 +19,7 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
         />
-          <h1 className="section-header">GET IN TOUCH & FOLLOW US</h1>
+          <h1 className="section-header"><FormattedMessage {...messages.contactTitle} /></h1>
           <div className="contact-wrapper">
 
             <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">

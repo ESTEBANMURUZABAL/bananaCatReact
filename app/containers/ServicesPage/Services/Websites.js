@@ -1,18 +1,20 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import './Websites.scss';
+import messages from '../messages';
 
-class Websites extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class Websites extends React.Component {
   render() {
     return (
       <div>
-        <h1>Desarrollo Web Profesional</h1>
-        <p>BananaCatCo. ofrece servicios de diseño y desarrollo de aplicaciones Web. Ofrecemos planes de Diseño Web a los mejores precios del mercado. Todos nuestros planes de diseño web Incluyen: Registro de Dominio, Diseño Web, Hosting y Soporte Técnico Especializado. Utilizamos las ultimas tecnologías para el desarrollo y diseño de cada página web, ofreciendo a nuestros clientes páginas de Internet funcionales y modernas.</p>
+        <h1><FormattedMessage {...messages.webTitle} /></h1>
+        <p><FormattedMessage {...messages.webContent} /></p>
         <div className="snip1265">
+
         <div className="plan">
           <header><i className="ion-ios-navigate-outline"></i>
             <h4 className="plan-title">Landing Page</h4>
-            <div className="plan-cost"><span className="plan-price">$19</span><span className="plan-type">/month</span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice1} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
             <li>Until 5 tabs or views</li>
@@ -20,38 +22,57 @@ class Websites extends React.Component { // eslint-disable-line react/prefer-sta
             <li>Design from templates</li>
             <li>Custom text/colors</li>
           </ul>
-          <div className="plan-select"><a href="">Select Plan</a></div>
+          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
         </div>
+
         <div className="plan">
           <header><i className="ion-ios-world"></i>
-            <h4 className="plan-title">Administrable</h4>
-            <div className="plan-cost"><span className="plan-price">$29</span><span className="plan-type">/month</span></div>
+            <h4 className="plan-title">Admin</h4>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice2} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
             <li>Until 15 tabs or views</li>
-            <li>2 custom form</li>
+            <li>2 custom forms</li>
             <li>User registration</li>
             <li>Custom design</li>
-            <li>Google AdWords campaign</li>
+            <li>Google AdWords</li>
             <li>1 months support</li>
           </ul>
-          <div className="plan-select"><a href="">Select Plan</a></div>
+          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
         </div>
+
         <div className="plan">
           <header><i className="ion-ios-people"></i>
             <h4 className="plan-title">eCommerce</h4>
-            <div className="plan-cost"><span className="plan-price">$49</span><span className="plan-type">/month</span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice3} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
             <li>Until 30 tabs or views</li>
             <li>3 custom form</li>
-            <li>User registration and management</li>
+            <li>Users management</li>
             <li>Custom design</li>
-            <li>Google AdWords campaign</li>
+            <li>Google AdWords</li>
             <li>3 months support</li>
           </ul>
-          <div className="plan-select"><a href="">Select Plan</a></div>
+          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
         </div>
+
+        <div className="plan">
+          <header><i className="ion-ios-speedometer"></i>
+            <h4 className="plan-title">Custom</h4>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice4} /></span><span className="plan-type"></span></div>
+          </header>
+          <ul className="plan-features">
+            <li>Custom design!</li>
+            <li>? tabs or views</li>
+            <li>? custom forms</li>
+            <li>? user registration</li>
+            <li>Google AdWords</li>
+            <li>? months support</li>
+          </ul>
+          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+        </div>
+
         </div>
       </div>
     );
