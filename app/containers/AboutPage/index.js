@@ -19,7 +19,6 @@ export default class AboutPage extends React.Component { // eslint-disable-line 
     return (
       <div className="about-container">
         <Helmet
-          title="About Page"
           meta={[
             { name: 'description', content: 'Services page' },
           ]}

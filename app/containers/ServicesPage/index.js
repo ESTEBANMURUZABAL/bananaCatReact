@@ -48,7 +48,6 @@ export default class ServicesPage extends React.Component {
     return (
       <div>
         <Helmet
-          title="Services Page"
           meta={[{ name: 'description', content: 'Services page' },
                 ]}
         />

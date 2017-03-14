@@ -27,10 +27,8 @@ export function App(props) {
       </StickyContainer>
       <AppWrapper>
         <Helmet
-          titleTemplate="%s - React.js Boilerplate"
-          defaultTitle="React.js Boilerplate"
           meta={[
-            { name: 'description', content: 'A React.js Boilerplate application' },
+            { name: 'description', content: 'BananaCatCo website' },
           ]}
         />
         {React.Children.toArray(props.children)}

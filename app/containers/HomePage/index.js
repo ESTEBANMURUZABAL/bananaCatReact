@@ -60,7 +60,6 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     return (
       <Container>
         <Helmet
-          title="Home Page"
           meta={[
             { name: 'description', content: 'Banana Cat Ideas & Solutions' },
           ]}

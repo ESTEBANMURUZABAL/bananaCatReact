@@ -6,8 +6,6 @@ import './index.scss';
 
 export default class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
-  // Since state and props are static,
-  // there's no need to re-render this component
   shouldComponentUpdate() {
     return false;
   }
@@ -16,7 +14,6 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
     return (
       <section id="contact">
         <Helmet
-          title="Contact Page"
           meta={[
             { name: 'description', content: 'Services page' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
