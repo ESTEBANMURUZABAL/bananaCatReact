@@ -1,67 +1,73 @@
+
+
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import { Link } from 'react-router';
+import style from './index.scss';
 
 import messages from './messages';
 
-class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export default class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props)
+    this.state = {
+      activeIndex: null
+    }
+  }
+
+  handleClick(index) {
+    this.setState({activeIndex: index})
+  }
+
   render() {
+
     return (
-      <NavBar>
-        <HeaderLink to="/">
-          <FormattedMessage {...messages.home} />
-        </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
-        </HeaderLink>
-        <HeaderLink to="/services">
-          <FormattedMessage {...messages.services} />
-        </HeaderLink>
-        <HeaderLink to="/contact">
-          <FormattedMessage {...messages.contact} />
-        </HeaderLink>
-        <HeaderLink to="/about">
-          <FormattedMessage {...messages.about} />
-        </HeaderLink>
-      </NavBar>
+        <div className="navbar">
+          <HeaderLink to="" index={0} isActive={this.state.activeIndex===0} onClick={this.handleClick.bind(this)}>
+            <FormattedMessage {...messages.home} />
+          </HeaderLink>
+          <HeaderLink to="features" index={1} isActive={this.state.activeIndex===1} onClick={this.handleClick.bind(this)}>
+            <FormattedMessage {...messages.features} />
+          </HeaderLink>
+          <HeaderLink to="services" index={2} isActive={this.state.activeIndex===2} onClick={this.handleClick.bind(this)}>
+            <FormattedMessage {...messages.services} />
+          </HeaderLink>
+          <HeaderLink to="contact" index={3} isActive={this.state.activeIndex===3} onClick={this.handleClick.bind(this)}>
+            <FormattedMessage {...messages.contact} />
+          </HeaderLink>
+          <HeaderLink to="about" index={4} isActive={this.state.activeIndex===4} onClick={this.handleClick.bind(this)}>
+            <FormattedMessage {...messages.about} />
+          </HeaderLink>
+        </div>
     );
   }
 }
 
-export default Header;
-
-const HeaderLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  color: #000;
-  letter-spacing: 0.1rem;
-	transition: all 0.5s ease;
-	font-size: 1rem;
-  font-family: 'Lato', sans-serif;
-  text-decoration:none;
-  color:white;
-  &:hover {
-    background: rgba(102,177,241,0.8);
-		transition: all 0.5s ease;
+class HeaderLink extends React.Component {
+  constructor(props) {
+    super(props)
   }
-`;
 
-const NavBar = styled.div`
-  text-align: center;
-  display: flex;
-  width:100%;
-  position:fixed;
-  background-color: #2A2C39;
-  height:60px;
-  font-family: 'Lato', sans-serif;
-  margin:0px auto;
-  flex-direction: row;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  &--top {
-    position: fixed;
-    top: 0;
+  handleClick() {
+    this.props.onClick(this.props.index)
   }
-`;
+
+  render () {
+    return (
+      this.props.isActive
+      ?
+      <Link to={this.props.to} className="active" onClick={this.handleClick.bind(this)}>
+        <div className="container-header">
+          <div className="left"><div className="image" /></div>
+          <div className="title">
+            {this.props.children}
+          </div>
+        </div>
+      </Link>
+      : <Link to={this.props.to} className="normal" onClick={this.handleClick.bind(this)}>
+          {this.props.children}
+        </Link>
+    )
+  }
+}

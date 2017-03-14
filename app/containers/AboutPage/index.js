@@ -23,7 +23,7 @@ export default class AboutPage extends React.Component { // eslint-disable-line 
             { name: 'description', content: 'Services page' },
           ]}
         />
-        <div className="title">
+        <div className="title-about">
           <FormattedMessage {...messages.header} />
         </div>
         <div>We are BananaCatCo, a company that makes clean, modern websites and applications
