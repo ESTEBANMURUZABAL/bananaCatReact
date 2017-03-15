@@ -1,10 +1,10 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import styled from 'styled-components';
-import './Websites.scss';
+import { Link } from 'react-router';
+import './styles.scss';
 import messages from '../messages';
 
-class Mobile extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export default class Mobile extends React.Component {
   render() {
     return (
       <div>
@@ -15,47 +15,47 @@ class Mobile extends React.Component { // eslint-disable-line react/prefer-state
         <div className="plan">
           <header><i className="ion-ios-navigate-outline"></i>
             <h4 className="plan-title">Package 1</h4>
-            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobilePrice1} /></span><span className="plan-type">/month</span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobilePrice1} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 5 tabs or views</li>
-            <li>1 custom form</li>
-            <li>Design from templates</li>
-            <li>Custom text/colors</li>
+            <li><FormattedMessage {...messages.mobilePack1Feature1} /></li>
+            <li><FormattedMessage {...messages.mobilePack1Feature2} /></li>
+            <li><FormattedMessage {...messages.mobilePack1Feature3} /></li>
+            <li><FormattedMessage {...messages.mobilePack1Feature4} /></li>
           </ul>
-          <div className="plan-select"><FormattedMessage {...messages.selectPlan} /><a href=""></a></div>
+          <div className="plan-select"><Link to="/services/mobilePack1"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
           <header><i className="ion-ios-world"></i>
             <h4 className="plan-title">Package 2</h4>
-            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobilePrice2} /></span><span className="plan-type">/month</span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobilePrice2} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 15 tabs or views</li>
-            <li>2 custom form</li>
-            <li>User registration</li>
-            <li>Custom design</li>
-            <li>Google AdWords campaign</li>
-            <li>1 months support</li>
+            <li><FormattedMessage {...messages.mobilePack2Feature1} /></li>
+            <li><FormattedMessage {...messages.mobilePack2Feature2} /></li>
+            <li><FormattedMessage {...messages.mobilePack2Feature3} /></li>
+            <li><FormattedMessage {...messages.mobilePack2Feature4} /></li>
+            <li><FormattedMessage {...messages.mobilePack2Feature5} /></li>
+            <li><FormattedMessage {...messages.mobilePack2Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/mobilePack2"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
           <header><i className="ion-ios-people"></i>
             <h4 className="plan-title">Package 3</h4>
-            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobilePrice3} /></span><span className="plan-type">/month</span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobilePrice3} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 30 tabs or views</li>
-            <li>3 custom form</li>
-            <li>User registration and management</li>
-            <li>Custom design</li>
-            <li>Google AdWords campaign</li>
-            <li>3 months support</li>
+            <li><FormattedMessage {...messages.mobilePack3Feature1} /></li>
+            <li><FormattedMessage {...messages.mobilePack3Feature2} /></li>
+            <li><FormattedMessage {...messages.mobilePack3Feature3} /></li>
+            <li><FormattedMessage {...messages.mobilePack3Feature4} /></li>
+            <li><FormattedMessage {...messages.mobilePack3Feature5} /></li>
+            <li><FormattedMessage {...messages.mobilePack3Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/mobilePack3"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
@@ -64,14 +64,14 @@ class Mobile extends React.Component { // eslint-disable-line react/prefer-state
             <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobilePrice4} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Custom design!</li>
-            <li>? tabs or views</li>
-            <li>? custom forms</li>
-            <li>? user registration</li>
-            <li>Google AdWords</li>
-            <li>? months support</li>
+            <li><FormattedMessage {...messages.mobilePack4Feature1} /></li>
+            <li><FormattedMessage {...messages.mobilePack4Feature2} /></li>
+            <li><FormattedMessage {...messages.mobilePack4Feature3} /></li>
+            <li><FormattedMessage {...messages.mobilePack4Feature4} /></li>
+            <li><FormattedMessage {...messages.mobilePack4Feature5} /></li>
+            <li><FormattedMessage {...messages.mobilePack4Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/mobilePack4"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         </div>
@@ -79,15 +79,3 @@ class Mobile extends React.Component { // eslint-disable-line react/prefer-state
     );
   }
 }
-
-export default Mobile;
-
-const Container = styled.div`
-  text-align: center;
-  display: flex;
-  width:80%;
-  position: absolute;
-   border: 1px solid #666;
-   height:40%;
- flex-direction: row;
-`;

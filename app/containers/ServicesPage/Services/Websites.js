@@ -1,9 +1,10 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import './Websites.scss';
+import './styles.scss';
 import messages from '../messages';
+import { Link } from 'react-router';
 
-class Websites extends React.Component {
+export default class Websites extends React.Component {
   render() {
     return (
       <div>
@@ -17,12 +18,12 @@ class Websites extends React.Component {
             <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice1} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 5 tabs or views</li>
-            <li>1 custom form</li>
-            <li>Design from templates</li>
-            <li>Custom text/colors</li>
+            <li><FormattedMessage {...messages.webPack1Feature1} /></li>
+            <li><FormattedMessage {...messages.webPack1Feature2} /></li>
+            <li><FormattedMessage {...messages.webPack1Feature3} /></li>
+            <li><FormattedMessage {...messages.webPack1Feature4} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/webPack1"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
@@ -31,14 +32,14 @@ class Websites extends React.Component {
             <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice2} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 15 tabs or views</li>
-            <li>2 custom forms</li>
-            <li>User registration</li>
-            <li>Custom design</li>
-            <li>Google AdWords</li>
-            <li>1 months support</li>
+            <li><FormattedMessage {...messages.webPack2Feature1} /></li>
+            <li><FormattedMessage {...messages.webPack2Feature2} /></li>
+            <li><FormattedMessage {...messages.webPack2Feature3} /></li>
+            <li><FormattedMessage {...messages.webPack2Feature4} /></li>
+            <li><FormattedMessage {...messages.webPack2Feature5} /></li>
+            <li><FormattedMessage {...messages.webPack2Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/webPack2"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
@@ -47,14 +48,14 @@ class Websites extends React.Component {
             <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice3} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 30 tabs or views</li>
-            <li>3 custom form</li>
-            <li>Users management</li>
-            <li>Custom design</li>
-            <li>Google AdWords</li>
-            <li>3 months support</li>
+            <li><FormattedMessage {...messages.webPack3Feature1} /></li>
+            <li><FormattedMessage {...messages.webPack3Feature2} /></li>
+            <li><FormattedMessage {...messages.webPack3Feature3} /></li>
+            <li><FormattedMessage {...messages.webPack3Feature4} /></li>
+            <li><FormattedMessage {...messages.webPack3Feature5} /></li>
+            <li><FormattedMessage {...messages.webPack3Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/webPack3"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
@@ -63,14 +64,14 @@ class Websites extends React.Component {
             <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice4} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
-            <li>Custom design!</li>
-            <li>? tabs or views</li>
-            <li>? custom forms</li>
-            <li>? user registration</li>
-            <li>Google AdWords</li>
-            <li>? months support</li>
+            <li><FormattedMessage {...messages.webPack4Feature1} /></li>
+            <li><FormattedMessage {...messages.webPack4Feature2} /></li>
+            <li><FormattedMessage {...messages.webPack4Feature3} /></li>
+            <li><FormattedMessage {...messages.webPack4Feature4} /></li>
+            <li><FormattedMessage {...messages.webPack4Feature5} /></li>
+            <li><FormattedMessage {...messages.webPack4Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/webPack4"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         </div>
@@ -78,5 +79,3 @@ class Websites extends React.Component {
     );
   }
 }
-
-export default Websites;

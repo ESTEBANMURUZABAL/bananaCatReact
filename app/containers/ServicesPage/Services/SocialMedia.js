@@ -1,10 +1,10 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import styled from 'styled-components';
-import './Websites.scss';
+import './styles.scss';
 import messages from '../messages';
+import { Link } from 'react-router';
 
-class SocialMedia extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export default class SocialMedia extends React.Component {
   render() {
     return (
       <div>
@@ -15,63 +15,63 @@ class SocialMedia extends React.Component { // eslint-disable-line react/prefer-
         <div className="plan">
           <header><i className="ion-ios-navigate-outline"></i>
             <h4 className="plan-title">Package 1</h4>
-            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice1} /></span><span className="plan-type"></span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice1} /></span><span className="plan-type">/month</span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 5 tabs or views</li>
-            <li>1 custom form</li>
-            <li>Design from templates</li>
-            <li>Custom text/colors</li>
+          <li><FormattedMessage {...messages.socialPack1Feature1} /></li>
+          <li><FormattedMessage {...messages.socialPack1Feature2} /></li>
+          <li><FormattedMessage {...messages.socialPack1Feature3} /></li>
+          <li><FormattedMessage {...messages.socialPack1Feature4} /></li>
           </ul>
-          <div className="plan-select"><a href="">Select Plan</a></div>
+          <div className="plan-select"><Link to="/services/socialPack1"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
           <header><i className="ion-ios-world"></i>
             <h4 className="plan-title">Package 2</h4>
-            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice2} /></span><span className="plan-type"></span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice2} /></span><span className="plan-type">/month</span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 15 tabs or views</li>
-            <li>2 custom form</li>
-            <li>User registration</li>
-            <li>Custom design</li>
-            <li>Google AdWords campaign</li>
-            <li>1 months support</li>
+            <li><FormattedMessage {...messages.socialPack2Feature1} /></li>
+            <li><FormattedMessage {...messages.socialPack2Feature2} /></li>
+            <li><FormattedMessage {...messages.socialPack2Feature3} /></li>
+            <li><FormattedMessage {...messages.socialPack2Feature4} /></li>
+            <li><FormattedMessage {...messages.socialPack2Feature5} /></li>
+            <li><FormattedMessage {...messages.socialPack2Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/socialPack2"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
           <header><i className="ion-ios-people"></i>
             <h4 className="plan-title">Package 3</h4>
-            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice3} /></span><span className="plan-type"></span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice3} /></span><span className="plan-type">/month</span></div>
           </header>
           <ul className="plan-features">
-            <li>Until 30 tabs or views</li>
-            <li>3 custom form</li>
-            <li>User registration and management</li>
-            <li>Custom design</li>
-            <li>Google AdWords campaign</li>
-            <li>3 months support</li>
+            <li><FormattedMessage {...messages.socialPack3Feature1} /></li>
+            <li><FormattedMessage {...messages.socialPack3Feature2} /></li>
+            <li><FormattedMessage {...messages.socialPack3Feature3} /></li>
+            <li><FormattedMessage {...messages.socialPack3Feature4} /></li>
+            <li><FormattedMessage {...messages.socialPack3Feature5} /></li>
+            <li><FormattedMessage {...messages.socialPack3Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/socialPack3"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         <div className="plan">
           <header><i className="ion-ios-speedometer"></i>
             <h4 className="plan-title">Custom</h4>
-            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice4} /></span><span className="plan-type"></span></div>
+            <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice4} /></span><span className="plan-type">/month</span></div>
           </header>
           <ul className="plan-features">
-            <li>Custom design!</li>
-            <li>? tabs or views</li>
-            <li>? custom forms</li>
-            <li>? user registration</li>
-            <li>Google AdWords</li>
-            <li>? months support</li>
+            <li><FormattedMessage {...messages.socialPack4Feature1} /></li>
+            <li><FormattedMessage {...messages.socialPack4Feature2} /></li>
+            <li><FormattedMessage {...messages.socialPack4Feature3} /></li>
+            <li><FormattedMessage {...messages.socialPack4Feature4} /></li>
+            <li><FormattedMessage {...messages.socialPack4Feature5} /></li>
+            <li><FormattedMessage {...messages.socialPack4Feature6} /></li>
           </ul>
-          <div className="plan-select"><a href=""><FormattedMessage {...messages.selectPlan} /></a></div>
+          <div className="plan-select"><Link to="/services/socialPack4"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>
 
         </div>
@@ -79,5 +79,3 @@ class SocialMedia extends React.Component { // eslint-disable-line react/prefer-
     );
   }
 }
-
-export default SocialMedia;

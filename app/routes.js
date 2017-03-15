@@ -39,6 +39,14 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
+      path: '/services/:packNum',
+      name: 'propousalPage',
+      getComponent(location, cb) {
+        import('containers/PropousalPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '/contact',
       name: 'contactPage',
       getComponent(location, cb) {

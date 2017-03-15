@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import Websites from './Services/Websites';
 import SocialMedia from './Services/SocialMedia';
 import Mobile from './Services/Mobile';
+import MobileApps from './Services/MobileApps';
+
 import messages from './messages';
 import './index.scss';
 
@@ -15,82 +17,57 @@ export default class ServicesPage extends React.Component {
     this.handleClick = this.handleClick.bind(this);
 
     this.state = {
-      serviceId: 0,
+      activeIndex: 'Websites',
     };
   }
 
   handleClick(index) {
-    this.setState({ serviceId: index });
+    this.setState({ activeIndex: index });
   }
 
   render() {
-    const serviceId = this.state.serviceId;
+    const Components = {
+      "Websites": Websites,
+      "Mobile": Mobile,
+      "SocialMedia": SocialMedia,
+      "MobileApps": MobileApps
+    };
 
-    let tabInfo;
-    let tabTitle;
-    if (serviceId===0) {
-      tabInfo = <Websites />;
-      tabTitle = (<div><Service selected onClick={() => this.handleClick(0)}><FormattedMessage {...messages.websitesTab} /></Service>
-      <Service onClick={() => this.handleClick(1)}><FormattedMessage {...messages.socialTab} /></Service>
-      <Service onClick={() => this.handleClick(2)}><FormattedMessage {...messages.mobileTab} /></Service></div>)
-    } else if (serviceId===1) {
-      tabInfo = <SocialMedia />;
-      tabTitle = (<div><Service onClick={() => this.handleClick(0)}><FormattedMessage {...messages.websitesTab} /></Service>
-      <Service selected onClick={() => this.handleClick(1)}><FormattedMessage {...messages.socialTab} /></Service>
-      <Service onClick={() => this.handleClick(2)}><FormattedMessage {...messages.mobileTab} /></Service></div>)
-    } else if (serviceId===2) {
-      tabInfo = <Mobile />;
-      tabTitle = (<div><Service onClick={() => this.handleClick(0)}><FormattedMessage {...messages.websitesTab} /></Service>
-      <Service onClick={() => this.handleClick(1)}><FormattedMessage {...messages.socialTab} /></Service>
-      <Service selected onClick={() => this.handleClick(2)}><FormattedMessage {...messages.mobileTab} /></Service></div>)
-    }
-
+    let Component = Components[this.state.activeIndex];
     return (
       <div>
         <Helmet
           meta={[{ name: 'description', content: 'Services page' },
                 ]}
         />
-        <TabList>
-          {tabTitle}
-        </TabList>
-        <TabInfo>
-          {tabInfo}
-        </TabInfo>
+        <div className="service-tabs">
+          <Services index="Websites" isActive={this.state.activeIndex==='Websites'} onClick={this.handleClick.bind(this)}><FormattedMessage {...messages.websitesTab} /></Services>
+          <Services index="SocialMedia" isActive={this.state.activeIndex==='SocialMedia'} onClick={this.handleClick.bind(this)}><FormattedMessage {...messages.socialTab} /></Services>
+          <Services index="Mobile" isActive={this.state.activeIndex==='Mobile'} onClick={this.handleClick.bind(this)}><FormattedMessage {...messages.mobileTab} /></Services>
+          <Services index="MobileApps" isActive={this.state.activeIndex==='MobileApps'} onClick={this.handleClick.bind(this)}><FormattedMessage {...messages.mobileAppsTab} /></Services>
+        </div>
+        <div className="service-info">
+          <Component />
+        </div>
       </div>
     );
   }
 }
 
-const Service = styled.div`
-  background: ${props => props.selected ? '#0091EA' : '#263238'};
-  display: inline-block;
-  width: 100%;
-  padding: 1rem 2rem;
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  cursor: pointer;
-  &:hover {
-    background: ${props => props.selected ? '#0091EA' : '#37474F'};
-    transition: all 0.5s ease;
+class Services extends React.Component {
+  constructor(props) {
+    super(props)
   }
-`;
 
-const TabList = styled.div`
-  position:fixed;
-  width: 18%;
-  height: 100%;
-  background: #263238;
-  text-align:left;
-  font-family: 'Lato', sans-serif;
-`;
+  handleClick() {
+    this.props.onClick(this.props.index)
+  }
 
-const TabInfo = styled.div`
-  position: fixed;
-  align-content: space-around;
-  right: 0px;
-  width: 82%;
-  padding: 0 3% 0 3%;
-  text-align: left;
-`;
+  render () {
+    return (
+      this.props.isActive
+      ? <div className="active-service" onClick={this.handleClick.bind(this)}>{this.props.children}</div>
+      : <div className="normal-service" onClick={this.handleClick.bind(this)}>{this.props.children}</div>
+    )
+  }
+}

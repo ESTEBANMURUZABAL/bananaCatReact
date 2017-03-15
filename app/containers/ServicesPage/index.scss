@@ -1,28 +1,47 @@
-.layout {
-  text-align: center;
-  display: flex;
-  width:100%;
-  height: 740;
- flex-direction: row;
-}
-.service {
-  background:#263238;
-  font-family: "Open Sans", sans-serif;
-
-  color:white;
-
+.active-service {
+  background: #0091EA;
   display: inline-block;
   width: 100%;
   padding: 1rem 2rem;
-
-
-  font-family: inherit;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   color: #fff;
   cursor: pointer;
-
-&:hover {
-  background: #37474F;
-  transition: all 0.5s ease;
+  &:hover {
+    background: #0091EA;
+    transition: all 0.5s ease;
+  }
 }
+
+.normal-service {
+  background: #263238;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background: #37474F;
+    transition: all 0.5s ease;
+  }
+}
+
+.service-tabs {
+  position:fixed;
+  width: 18%;
+  height: 100%;
+  background: #263238;
+  text-align:left;
+  font-family: 'Lato', sans-serif;
+}
+
+.service-info {
+  position: fixed;
+  align-content: space-around;
+  right: 0px;
+  width: 82%;
+  padding: 0 3% 0 3%;
+  text-align: left;
 }
