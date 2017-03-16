@@ -11,6 +11,11 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
   }
 
   render() {
+    const name = this.props.intl.formatMessage(messages.name);
+    const email = this.props.intl.formatMessage(messages.email);
+    const phone = this.props.intl.formatMessage(messages.phone);
+    const message = this.props.intl.formatMessage(messages.message);
+
     return (
       <section id="contact">
         <Helmet
@@ -19,24 +24,30 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
         />
-          <h1 className="section-header"><FormattedMessage {...messages.contactTitle} /></h1>
+          <h1 className="section-header"><FormattedMessage {...messages.title} /></h1>
           <div className="contact-wrapper">
 
             <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
 
               <div className="form-group">
                 <div className="col-sm-12">
-                  <input type="text" className="form-control" id="name" placeholder="NAME" name="name"/>
+                  <input type="text" className="form-control" id="name" placeholder={name} name="name"/>
                 </div>
               </div>
 
               <div className="form-group">
                 <div className="col-sm-12">
-                  <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email"/>
+                  <input type="numbers" className="form-control" id="phone" placeholder={phone} name="phone"/>
                 </div>
               </div>
 
-              <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+              <div className="form-group">
+                <div className="col-sm-12">
+                  <input type="email" className="form-control" id="email" placeholder={email} name="email"/>
+                </div>
+              </div>
+
+              <textarea className="form-control" rows="10" placeholder={message} name="message"></textarea>
 
               <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                 <div className="button">

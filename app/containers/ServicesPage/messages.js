@@ -6,10 +6,52 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
+  //////email page from PropousalPage
+  title: {
+    id: 'boilerplate.containers.ContactPage.title',
+    defaultMessage: 'GET IN TOUCH & FOLLOW US',
+  },
+  name: {
+    id: 'boilerplate.containers.ContactPage.name',
+    defaultMessage: 'NAME',
+  },
+  email: {
+    id: 'boilerplate.containers.ContactPage.email',
+    defaultMessage: 'EMAIL',
+  },
+  message: {
+    id: 'boilerplate.containers.ContactPage.message',
+    defaultMessage: 'MESSAGE',
+  },
+////propousalPage messagess
+  propousalMessage: {
+    id: 'boilerplate.containers.ContactPage.propousalMessage',
+    defaultMessage: 'COMMENTS AND INQUIRES',
+  },
+  phone: {
+    id: 'boilerplate.containers.ContactPage.phone',
+    defaultMessage: 'PHONE NUMBER',
+  },
+  string1: {
+    id: 'boilerplate.containers.ContactPage.string1',
+    defaultMessage: 'You choosed',
+  },
+  string2: {
+    id: 'boilerplate.containers.ContactPage.string2',
+    defaultMessage: ', fill out the form & we\'ll get in touch',
+  },
+  subtitle: {
+    id: 'boilerplate.containers.ContactPage.subtitle',
+    defaultMessage: 'Your package includes:',
+  },
   /////COMMON/////////////
   selectPlan: {
     id: 'boilerplate.containers.ServicesPage.selectPlan',
     defaultMessage: 'Select Plan',
+  },
+  send: {
+    id: 'boilerplate.containers.ContactPage.send',
+    defaultMessage: 'SEND',
   },
   /////WEBSITE TAB ////////////
   websitesTab: {

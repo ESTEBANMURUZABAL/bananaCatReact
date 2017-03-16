@@ -128,10 +128,16 @@
   "boilerplate.containers.AboutPage.header": "Sobre nosotros",
   "boilerplate.containers.AboutPage.content": "Somos BananaCatCo, a company that makes clean, modern websites and applications with the most kickass technology. I focus on User Experience and desiging intuitive, enjoyable products. More broadly, I provide Graphic Design, Social Media, Video Editing, Web Design & Development, Advertising and many other creative solutions for businesses large & small as well as non-profits and individuals.",
 
-  "boilerplate.containers.ContactPage.contactTitle": "Contactanos",
-  "boilerplate.containers.ContactPage.name": "NOMBRE",
+  "boilerplate.containers.ContactPage.title": "Contactanos",
   "boilerplate.containers.ContactPage.email": "CORREO",
   "boilerplate.containers.ContactPage.message": "MENSAJE",
+  "boilerplate.containers.ContactPage.phone": "NUMERO DE TELEFONO",
+  "boilerplate.containers.ContactPage.string1": "Elegiste",
+  "boilerplate.containers.ContactPage.name": "NOMBRE",
+  "boilerplate.containers.ContactPage.string2": ", rellena tus datos y te contactaremos!",
+  "boilerplate.containers.ContactPage.subtitle": "Tu paquete incluye:",
+  "boilerplate.containers.ContactPage.propousalMessage": "COMENTARIOS Y PREGUNTAS",
+  "boilerplate.containers.ContactPage.send": "ENVIAR",
 
   "boilerplate.containers.FeaturePage.css.header": "Features",
   "boilerplate.containers.FeaturePage.css.message": "Next generation CSS",

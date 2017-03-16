@@ -1,17 +1,35 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import messages from '../ServicesPage/messages';
 import './style.scss';
+import {defineMessages, injectIntl, intlShape, FormattedMessage} from 'react-intl';
 
-export default class PropousalPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
-  shouldComponentUpdate() {
-    return false;
-  }
-
+class PropousalPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
+    const Packs = {
+      "webPack1": WebPack1,
+      "webPack2": WebPack2,
+      "webPack3": WebPack3,
+      "webPack4": WebPack4,
+      "mobilePack1": MobilePack1,
+      "mobilePack2": MobilePack2,
+      "mobilePack3": MobilePack3,
+      "mobilePack4": MobilePack4,
+      "mobileAppsPack1": MobileAppsPack1,
+      "mobileAppsPack2": MobileAppsPack2,
+      "mobileAppsPack3": MobileAppsPack3,
+      "mobileAppsPack4": MobileAppsPack4,
+      "socialPack1": SocialPack1,
+      "socialPack2": SocialPack2,
+      "socialPack3": SocialPack3,
+      "socialPack4": SocialPack4,
+    };
+    const PackFeatures = Packs[this.props.params.packNum];
+    const name = this.props.intl.formatMessage(messages.name);
+    const email = this.props.intl.formatMessage(messages.email);
+    const phone = this.props.intl.formatMessage(messages.phone);
+    const propousalMessage = this.props.intl.formatMessage(messages.propousalMessage);
 
     return (
       <section id="contact">
@@ -21,76 +39,203 @@ export default class PropousalPage extends React.Component { // eslint-disable-l
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
         />
-          <h1 className="section-header">Elejiste {this.props.params.packNum}, rellena tus datos y te contactaremos!</h1>
+          <div className="propusal-title"><FormattedMessage {...messages.string1} /> {this.props.params.packNum}<FormattedMessage {...messages.string2} /></div>
           <div className="contact-wrapper">
+
+            <div className="direct-contact-container">
+              <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
+              <ul className="contact-list">
+                <PackFeatures />
+              </ul>
+            </div>
 
             <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
 
               <div className="form-group">
                 <div className="col-sm-12">
-                  <input type="text" className="form-control" id="name" placeholder="NAME" name="name"/>
+                  <input type="text" className="form-control" id="name" placeholder={name} name="name"/>
                 </div>
               </div>
-
               <div className="form-group">
                 <div className="col-sm-12">
-                  <input type="numbers" className="form-control" id="phone" placeholder="PHONE" name="phone"/>
+                  <input type="numbers" className="form-control" id="phone" placeholder={phone} name="phone"/>
                 </div>
               </div>
-
               <div className="form-group">
                 <div className="col-sm-12">
-                  <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email"/>
+                  <input type="email" className="form-control" id="email" placeholder={email} name="email"/>
                 </div>
               </div>
-
-              <textarea className="form-control" rows="10" placeholder="COMMENTS AND INQUIRES" name="message"></textarea>
-
+              <textarea className="form-control" rows="10" placeholder={propousalMessage} name="propousalMessage"></textarea>
               <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                 <div className="button">
-                  <i className="fa fa-paper-plane"></i><span className="send-text">SEND</span>
+                  <i className="fa fa-paper-plane"></i><span className="send-text"><FormattedMessage {...messages.send} /></span>
                 </div>
-
               </button>
               <input type="hidden" name="_next" value="http://localhost:3000/contact" />
             </form>
 
-
-
-              <div className="direct-contact-container">
-
-                <ul className="contact-list">
-                  
-                  <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Chaco-Argentina</span></i></li>
-
-                  <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a href="tel:9-362-420-1230" title="Give me a call">(3624) 20-1230</a></span></i></li>
-
-                  <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">BananaCatCo@gmail.com</a></span></i></li>
-
-                </ul>
-
-                <hr></hr>
-                <ul className="social-media-list">
-                  <li><a href="#" target="_blank" className="contact-icon">
-                    <i className="fa fa-github-alt" aria-hidden="true"></i></a>
-                  </li>
-                  <li><a href="#" target="_blank" className="contact-icon">
-                    <i className="fa fa-twitter" aria-hidden="true"></i></a>
-                  </li>
-                  <li><a href="#" target="_blank" className="contact-icon">
-                    <i className="fa fa-instagram" aria-hidden="true"></i></a>
-                  </li>
-                  <li><a href="#" target="_blank" className="contact-icon">
-                    <i className="fa fa-facebook" aria-hidden="true"></i></a>
-                  </li>
-                </ul>
-                <hr></hr>
-
-                <div className="copyright">&copy; 2016 ALL RIGHTS RESERVED</div>
-
-              </div>
           </div>
         </section>
     );
   }
+}
+
+PropousalPage.propTypes = {
+    intl : intlShape.isRequired
+};
+
+export default injectIntl(PropousalPage);
+
+function WebPack1() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack1Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.webPack1Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack1Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack1Feature4} /></span></i></li>
+    </div>
+}
+function WebPack2() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack2Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.webPack2Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack2Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack2Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack2Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack2Feature6} /></span></i></li>
+    </div>
+}
+function WebPack3() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack3Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.webPack3Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack3Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack3Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack3Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack3Feature6} /></span></i></li>
+    </div>
+}
+function WebPack4() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack4Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.webPack4Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature6} /></span></i></li>
+    </div>
+}
+function SocialPack1() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack1Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.socialPack1Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack1Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack1Feature4} /></span></i></li>
+    </div>
+}
+function SocialPack2() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack2Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.socialPack2Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack2Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack2Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack2Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack2Feature6} /></span></i></li>
+    </div>
+}
+function SocialPack3() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack3Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.socialPack3Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack3Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack3Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack3Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack3Feature6} /></span></i></li>
+    </div>
+}
+function SocialPack4() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack4Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.socialPack4Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature6} /></span></i></li>
+    </div>
+}
+function MobilePack1() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack1Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobilePack1Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack1Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack1Feature4} /></span></i></li>
+    </div>
+}
+function MobilePack2() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack2Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobilePack2Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack2Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack2Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack2Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack2Feature6} /></span></i></li>
+    </div>
+}
+function MobilePack3() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack3Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobilePack3Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack3Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack3Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack3Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack3Feature6} /></span></i></li>
+    </div>
+}
+function MobilePack4() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack4Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobilePack4Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature6} /></span></i></li>
+    </div>
+}
+function MobileAppsPack1() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack1Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobileAppsPack1Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack1Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack1Feature4} /></span></i></li>
+    </div>
+}
+function MobileAppsPack2() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack2Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobileAppsPack2Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack2Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack2Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack2Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack2Feature6} /></span></i></li>
+    </div>
+}
+function MobileAppsPack3() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack3Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobileAppsPack3Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack3Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack3Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack3Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack3Feature6} /></span></i></li>
+    </div>
+}
+function MobileAppsPack4() {
+  return <div>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack4Feature1} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobileAppsPack4Feature2} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature3} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature4} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature5} /></span></i></li>
+    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature6} /></span></i></li>
+    </div>
 }

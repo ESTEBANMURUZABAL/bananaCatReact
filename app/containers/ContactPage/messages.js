@@ -6,12 +6,12 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  contactTitle: {
-    id: 'boilerplate.containers.ContactPage.contactTitle',
+  title: {
+    id: 'boilerplate.containers.ContactPage.title',
     defaultMessage: 'GET IN TOUCH & FOLLOW US',
   },
   name: {
-    id: 'boilerplate.containers.ContactPage.contactTitle',
+    id: 'boilerplate.containers.ContactPage.name',
     defaultMessage: 'NAME',
   },
   email: {
