@@ -6,7 +6,7 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  //////email page from PropousalPage
+  ////// email page from PropousalPage
   title: {
     id: 'boilerplate.containers.ContactPage.title',
     defaultMessage: 'GET IN TOUCH & FOLLOW US',
@@ -23,7 +23,7 @@ export default defineMessages({
     id: 'boilerplate.containers.ContactPage.message',
     defaultMessage: 'MESSAGE',
   },
-////propousalPage messagess
+//// propousalPage messagess
   propousalMessage: {
     id: 'boilerplate.containers.ContactPage.propousalMessage',
     defaultMessage: 'COMMENTS AND INQUIRES',
@@ -44,7 +44,7 @@ export default defineMessages({
     id: 'boilerplate.containers.ContactPage.subtitle',
     defaultMessage: 'Your package includes:',
   },
-  /////COMMON/////////////
+  ///// COMMON /////////////
   selectPlan: {
     id: 'boilerplate.containers.ServicesPage.selectPlan',
     defaultMessage: 'Select Plan',
@@ -53,7 +53,7 @@ export default defineMessages({
     id: 'boilerplate.containers.ContactPage.send',
     defaultMessage: 'SEND',
   },
-  /////WEBSITE TAB ////////////
+  ///// WEBSITE TAB ////////////
   websitesTab: {
     id: 'boilerplate.containers.ServicesPage.websitesTab',
     defaultMessage: 'Websites',
@@ -174,7 +174,7 @@ export default defineMessages({
     id: 'boilerplate.containers.ServicesPage.websitesTab.price4',
     defaultMessage: 'USD ?',
   },
-/////SOCIAL TAB ////////////
+///// SOCIAL TAB ////////////
   socialTab: {
     id: 'boilerplate.containers.ServicesPage.socialTab',
     defaultMessage: 'Social Media Management',
@@ -291,7 +291,7 @@ export default defineMessages({
     id: 'boilerplate.containers.ServicesPage.socialTab.price4',
     defaultMessage: '?',
   },
-/////MOBILE TAB ////////////
+///// MOBILE TAB ////////////
   mobileTab: {
     id: 'boilerplate.containers.ServicesPage.mobileTab',
     defaultMessage: 'Mobile Applications',
@@ -409,122 +409,121 @@ export default defineMessages({
     defaultMessage: '?',
   },
 
-  /////MOBILE APPS TAB ////////////
-    mobileAppsTab: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab',
-      defaultMessage: 'Mobile Apps Services',
-    },
-    mobileAppsTitle: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.title',
-      defaultMessage: 'Mobile Apps Monthly Services',
-    },
-    mobileAppsContent: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.content',
-      defaultMessage: 'Having created several iOS and Android apps, designing for mobile is right up alley. We know every pixel is valuable on mobile devices and know how to make the most pretty and intuitive apps.',
-    },
-    mobileAppsPack1Feature1: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature1',
-      defaultMessage: '5 tabs or views',
-    },
-    mobileAppsPack1Feature2: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature2',
-      defaultMessage: '1 custom form',
-    },
-    mobileAppsPack1Feature3: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature3',
-      defaultMessage: 'Design from templates',
-    },
-    mobileAppsPack1Feature4: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature4',
-      defaultMessage: 'Custom text/colors',
-    },
-    mobileAppsPack2Feature1: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature1',
-      defaultMessage: '5 tabs or views',
-    },
-    mobileAppsPack2Feature2: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature2',
-      defaultMessage: '1 custom form',
-    },
-    mobileAppsPack2Feature3: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature3',
-      defaultMessage: 'Design from templates',
-    },
-    mobileAppsPack2Feature4: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature4',
-      defaultMessage: 'Custom text/colors',
-    },
-    mobileAppsPack2Feature5: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature5',
-      defaultMessage: 'Design from templates',
-    },
-    mobileAppsPack2Feature6: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature6',
-      defaultMessage: 'Custom text/colors',
-    },
-    mobileAppsPack3Feature1: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature1',
-      defaultMessage: '5 tabs or views',
-    },
-    mobileAppsPack3Feature2: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature2',
-      defaultMessage: '1 custom form',
-    },
-    mobileAppsPack3Feature3: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature3',
-      defaultMessage: 'Design from templates',
-    },
-    mobileAppsPack3Feature4: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature4',
-      defaultMessage: 'Custom text/colors',
-    },
-    mobileAppsPack3Feature5: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature5',
-      defaultMessage: 'Design from templates',
-    },
-    mobileAppsPack3Feature6: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature6',
-      defaultMessage: 'Custom text/colors',
-    },
-    mobileAppsPack4Feature1: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature1',
-      defaultMessage: '5 tabs or views',
-    },
-    mobileAppsPack4Feature2: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature2',
-      defaultMessage: '1 custom form',
-    },
-    mobileAppsPack4Feature3: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature3',
-      defaultMessage: 'Design from templates',
-    },
-    mobileAppsPack4Feature4: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature4',
-      defaultMessage: 'Custom text/colors',
-    },
-    mobileAppsPack4Feature5: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature5',
-      defaultMessage: 'Design from templates',
-    },
-    mobileAppsPack4Feature6: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature6',
-      defaultMessage: 'Custom text/colors',
-    },
-    mobileAppsPrice1: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price1',
-      defaultMessage: 'USD 250',
-    },
-    mobileAppsPrice2: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price2',
-      defaultMessage: 'USD 450',
-    },
-    mobileAppsPrice3: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price3',
-      defaultMessage: 'USD 625',
-    },
-    mobileAppsPrice4: {
-      id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price4',
-      defaultMessage: '?',
-    },
-
+///// MOBILE APPS TAB ////////////
+  mobileAppsTab: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab',
+    defaultMessage: 'Mobile Apps Services',
+  },
+  mobileAppsTitle: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.title',
+    defaultMessage: 'Mobile Apps Monthly Services',
+  },
+  mobileAppsContent: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.content',
+    defaultMessage: 'Having created several iOS and Android apps, designing for mobile is right up alley. We know every pixel is valuable on mobile devices and know how to make the most pretty and intuitive apps.',
+  },
+  mobileAppsPack1Feature1: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature1',
+    defaultMessage: '5 tabs or views',
+  },
+  mobileAppsPack1Feature2: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature2',
+    defaultMessage: '1 custom form',
+  },
+  mobileAppsPack1Feature3: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature3',
+    defaultMessage: 'Design from templates',
+  },
+  mobileAppsPack1Feature4: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack1.feature4',
+    defaultMessage: 'Custom text/colors',
+  },
+  mobileAppsPack2Feature1: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature1',
+    defaultMessage: '5 tabs or views',
+  },
+  mobileAppsPack2Feature2: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature2',
+    defaultMessage: '1 custom form',
+  },
+  mobileAppsPack2Feature3: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature3',
+    defaultMessage: 'Design from templates',
+  },
+  mobileAppsPack2Feature4: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature4',
+    defaultMessage: 'Custom text/colors',
+  },
+  mobileAppsPack2Feature5: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature5',
+    defaultMessage: 'Design from templates',
+  },
+  mobileAppsPack2Feature6: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack2.feature6',
+    defaultMessage: 'Custom text/colors',
+  },
+  mobileAppsPack3Feature1: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature1',
+    defaultMessage: '5 tabs or views',
+  },
+  mobileAppsPack3Feature2: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature2',
+    defaultMessage: '1 custom form',
+  },
+  mobileAppsPack3Feature3: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature3',
+    defaultMessage: 'Design from templates',
+  },
+  mobileAppsPack3Feature4: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature4',
+    defaultMessage: 'Custom text/colors',
+  },
+  mobileAppsPack3Feature5: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature5',
+    defaultMessage: 'Design from templates',
+  },
+  mobileAppsPack3Feature6: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack3.feature6',
+    defaultMessage: 'Custom text/colors',
+  },
+  mobileAppsPack4Feature1: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature1',
+    defaultMessage: '5 tabs or views',
+  },
+  mobileAppsPack4Feature2: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature2',
+    defaultMessage: '1 custom form',
+  },
+  mobileAppsPack4Feature3: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature3',
+    defaultMessage: 'Design from templates',
+  },
+  mobileAppsPack4Feature4: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature4',
+    defaultMessage: 'Custom text/colors',
+  },
+  mobileAppsPack4Feature5: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature5',
+    defaultMessage: 'Design from templates',
+  },
+  mobileAppsPack4Feature6: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature6',
+    defaultMessage: 'Custom text/colors',
+  },
+  mobileAppsPrice1: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price1',
+    defaultMessage: 'USD 250',
+  },
+  mobileAppsPrice2: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price2',
+    defaultMessage: 'USD 450',
+  },
+  mobileAppsPrice3: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price3',
+    defaultMessage: 'USD 625',
+  },
+  mobileAppsPrice4: {
+    id: 'boilerplate.containers.ServicesPage.mobileAppsTab.price4',
+    defaultMessage: '?',
+  },
 });

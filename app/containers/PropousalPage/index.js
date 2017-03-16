@@ -2,14 +2,14 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import messages from '../ServicesPage/messages';
 import './style.scss';
-import {defineMessages, injectIntl, intlShape, FormattedMessage} from 'react-intl';
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 
 class PropousalPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   shouldComponentUpdate() {
     return false;
   }
-  
+
   render() {
     const Packs = {
       "webPack1": WebPack1,

@@ -16,8 +16,7 @@ const AppWrapper = styled.div`
   padding-top: 60px;
 `;
 
-
-export function App(props) {
+function App(props) {
   return (
     <div>
       <StickyContainer>

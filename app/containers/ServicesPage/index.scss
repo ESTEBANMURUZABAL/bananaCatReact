@@ -1,33 +1,3 @@
-.active-service {
-  background: #0091EA;
-  display: inline-block;
-  width: 100%;
-  padding: 1rem 2rem;
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  cursor: pointer;
-  &:hover {
-    background: #0091EA;
-    transition: all 0.5s ease;
-  }
-}
-
-.normal-service {
-  background: #263238;
-  display: inline-block;
-  width: 100%;
-  padding: 1rem 2rem;
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  cursor: pointer;
-  &:hover {
-    background: #37474F;
-    transition: all 0.5s ease;
-  }
-}
-
 .service-tabs {
   position:fixed;
   width: 18%;
