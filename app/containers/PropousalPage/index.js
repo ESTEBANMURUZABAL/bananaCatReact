@@ -10,7 +10,9 @@ export default class PropousalPage extends React.Component { // eslint-disable-l
     return false;
   }
 
+
   render() {
+
     return (
       <section id="contact">
         <Helmet
@@ -19,7 +21,7 @@ export default class PropousalPage extends React.Component { // eslint-disable-l
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
         />
-          <h1 className="section-header">{this.props.params.packNum}</h1>
+          <h1 className="section-header">Elejiste {this.props.params.packNum}, rellena tus datos y te contactaremos!</h1>
           <div className="contact-wrapper">
 
             <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
@@ -32,11 +34,17 @@ export default class PropousalPage extends React.Component { // eslint-disable-l
 
               <div className="form-group">
                 <div className="col-sm-12">
+                  <input type="numbers" className="form-control" id="phone" placeholder="PHONE" name="phone"/>
+                </div>
+              </div>
+
+              <div className="form-group">
+                <div className="col-sm-12">
                   <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email"/>
                 </div>
               </div>
 
-              <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+              <textarea className="form-control" rows="10" placeholder="COMMENTS AND INQUIRES" name="message"></textarea>
 
               <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                 <div className="button">
@@ -52,6 +60,7 @@ export default class PropousalPage extends React.Component { // eslint-disable-l
               <div className="direct-contact-container">
 
                 <ul className="contact-list">
+                  
                   <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Chaco-Argentina</span></i></li>
 
                   <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a href="tel:9-362-420-1230" title="Give me a call">(3624) 20-1230</a></span></i></li>

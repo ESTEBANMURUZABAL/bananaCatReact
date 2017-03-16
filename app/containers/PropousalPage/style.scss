@@ -5,20 +5,27 @@
   background-color: #2A2C39;
   overflow: hidden;
   padding-bottom: 200px;
+
 }
 
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding-top: 50px;
-  margin-bottom: 50px;
-  font: 300 60px 'Oswald', sans-serif;
+  font: 300 40px 'Oswald', sans-serif;
   letter-spacing: 6px;
   color: #fff;
   margin-bottom: 25px;
 }
 
 .contact-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+  align-content: space-between;
+}
+
+.service-wrapper {
   margin: 0 auto;
   padding-top: 20px;
   position: relative;
@@ -183,7 +190,6 @@ button, input, optgroup, select, textarea {
 .direct-contact-container {
   max-width: 400px;
   float: right;
-  margin-top: 5px;
 }
 
 /* Location, Phone, Email Section */
