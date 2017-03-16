@@ -6,6 +6,10 @@ import {defineMessages, injectIntl, intlShape, FormattedMessage} from 'react-int
 
 class PropousalPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
+  shouldComponentUpdate() {
+    return false;
+  }
+  
   render() {
     const Packs = {
       "webPack1": WebPack1,

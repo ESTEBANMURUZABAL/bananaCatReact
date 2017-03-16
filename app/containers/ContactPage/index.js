@@ -1,10 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import './index.scss';
+import {defineMessages, injectIntl, intlShape, FormattedMessage} from 'react-intl';
 
-export default class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   shouldComponentUpdate() {
     return false;
@@ -96,3 +96,9 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
     );
   }
 }
+
+ContactPage.propTypes = {
+    intl : intlShape.isRequired
+};
+
+export default injectIntl(ContactPage);

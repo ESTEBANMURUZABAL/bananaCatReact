@@ -14,6 +14,10 @@ export default defineMessages({
     id: 'boilerplate.containers.ContactPage.name',
     defaultMessage: 'NAME',
   },
+  phone: {
+    id: 'boilerplate.containers.ContactPage.phone',
+    defaultMessage: 'PHONE NUMBER',
+  },
   email: {
     id: 'boilerplate.containers.ContactPage.email',
     defaultMessage: 'EMAIL',
