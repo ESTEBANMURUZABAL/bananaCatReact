@@ -16,7 +16,6 @@ function Toggle(props) {
 
   return (
     <div className="toggle-container">
-      <FormattedMessage {...messages.lenguage} />
       <select className="select" value={props.value} onChange={props.onToggle}>
         {content}
       </select>

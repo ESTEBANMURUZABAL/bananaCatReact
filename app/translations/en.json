@@ -4,7 +4,7 @@
   "boilerplate.components.Header.contact": "Contact",
   "boilerplate.components.Header.about": "About us",
   "boilerplate.components.Header.home": "Home",
-  "boilerplate.components.Header.lenguage": "Lenguaje",
+  "boilerplate.components.Header.lenguage": "Lenguage",
 
   "boilerplate.containers.ServicesPage.selectPlan": "Select Plan",
 
@@ -144,7 +144,7 @@
 
   "boilerplate.containers.HomePage.word0": "We make",
 
-  "boilerplate.containers.LocaleToggle.es": "eng",
-  "boilerplate.containers.LocaleToggle.en": "esp",
+  "boilerplate.containers.LocaleToggle.es": "Español",
+  "boilerplate.containers.LocaleToggle.en": "English",
   "boilerplate.containers.NotFoundPage.header": "Page not found."
 }

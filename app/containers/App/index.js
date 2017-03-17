@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Header from 'components/Header';
-import withProgressBar from 'components/ProgressBar';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 const AppWrapper = styled.div`
@@ -40,4 +39,4 @@ App.propTypes = {
   children: React.PropTypes.node,
 };
 
-export default withProgressBar(App);
+export default App;

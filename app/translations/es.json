@@ -4,7 +4,7 @@
   "boilerplate.components.Header.contact": "Contacto",
   "boilerplate.components.Header.about": "Nosotros",
   "boilerplate.components.Header.home": "Inicio",
-  "boilerplate.components.Header.lenguage": "Lenguage",
+  "boilerplate.components.Header.lenguage": "Lenguaje",
 
   "boilerplate.containers.ServicesPage.selectPlan": "Elegir Plan",
 
@@ -98,7 +98,7 @@
   "boilerplate.containers.ServicesPage.mobileTab.pack4.feature5": "Google AdWords ?",
   "boilerplate.containers.ServicesPage.mobileTab.pack4.feature6": "Monthly support ?",
 
-  "boilerplate.containers.ServicesPage.mobileAppsTab": "Mobile Apps Services",
+  "boilerplate.containers.ServicesPage.mobileAppsTab": "Servicio de Mobile Apps",
   "boilerplate.containers.ServicesPage.mobileAppsTab.title": "Mobile Apps Monthly Services",
   "boilerplate.containers.ServicesPage.mobileAppsTab.content": "Having created several iOS and Android apps, designing for mobile is right up alley. We know every pixel is valuable on mobile devices and know how to make the most pretty and intuitive apps.",
   "boilerplate.containers.ServicesPage.mobileAppsTab.price1": "$ 250",
@@ -164,7 +164,7 @@
   "boilerplate.containers.HomePage.start_project.message1": " websites",
   "boilerplate.containers.HomePage.start_project.message2": " mobile apps",
 
-  "boilerplate.containers.LocaleToggle.es": "eng",
-  "boilerplate.containers.LocaleToggle.en": "esp",
+  "boilerplate.containers.LocaleToggle.es": "Español",
+  "boilerplate.containers.LocaleToggle.en": "English",
   "boilerplate.containers.NotFoundPage.header": "Page not found."
 }
