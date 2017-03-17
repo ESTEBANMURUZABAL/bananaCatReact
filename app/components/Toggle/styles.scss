@@ -1,0 +1,18 @@
+.toggle-container {
+  height: 60px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color:white;
+}
+
+.select {
+  line-height: 1em;
+  &:hover {
+    background: rgba(102,177,241,0.8);
+    transition: all 0.5s ease;
+  }
+}

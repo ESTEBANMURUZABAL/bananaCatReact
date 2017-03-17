@@ -1,13 +1,8 @@
-/**
-*
-* LocaleToggle
-*
-*/
-
 import React from 'react';
-
-import Select from './Select';
 import ToggleOption from '../ToggleOption';
+import './styles.scss';
+import messages from './messages.js';
+import { FormattedMessage } from 'react-intl';
 
 function Toggle(props) {
   let content = (<option>--</option>);
@@ -20,9 +15,12 @@ function Toggle(props) {
   }
 
   return (
-    <Select value={props.value} onChange={props.onToggle}>
-      {content}
-    </Select>
+    <div className="toggle-container">
+      <FormattedMessage {...messages.lenguage} />
+      <select className="select" value={props.value} onChange={props.onToggle}>
+        {content}
+      </select>
+    </div>
   );
 }
 

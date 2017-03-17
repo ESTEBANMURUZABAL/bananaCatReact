@@ -4,6 +4,7 @@
   "boilerplate.components.Header.contact": "Contacto",
   "boilerplate.components.Header.about": "Nosotros",
   "boilerplate.components.Header.home": "Inicio",
+  "boilerplate.components.Header.lenguage": "Lenguage",
 
   "boilerplate.containers.ServicesPage.selectPlan": "Elegir Plan",
 
@@ -163,7 +164,7 @@
   "boilerplate.containers.HomePage.start_project.message1": " websites",
   "boilerplate.containers.HomePage.start_project.message2": " mobile apps",
 
-  "boilerplate.containers.LocaleToggle.es": "es",
-  "boilerplate.containers.LocaleToggle.en": "en",
+  "boilerplate.containers.LocaleToggle.es": "eng",
+  "boilerplate.containers.LocaleToggle.en": "esp",
   "boilerplate.containers.NotFoundPage.header": "Page not found."
 }

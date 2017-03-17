@@ -8,10 +8,10 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   en: {
     id: 'boilerplate.containers.LocaleToggle.en',
-    defaultMessage: 'en',
+    defaultMessage: 'esp',
   },
-  sp: {
+  es: {
     id: 'boilerplate.containers.LocaleToggle.es',
-    defaultMessage: 'es',
+    defaultMessage: 'eng',
   },
 });

@@ -11,6 +11,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import messages from './messages';
 
+
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
@@ -72,6 +73,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     );
   }
 }
+
 
 const TitleLink = styled(Link)`
   text-decoration: none;

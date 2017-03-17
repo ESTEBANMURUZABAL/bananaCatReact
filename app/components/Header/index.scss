@@ -3,13 +3,12 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #000;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-    text-decoration:none;
-    color:white;
+  font-family: 'Lato', sans-serif;
+  text-decoration:none;
+  color:white;
   &:hover {
     background: rgba(102,177,241,0.8);
     transition: all 0.5s ease;
@@ -26,6 +25,7 @@ div.image {
 .title {
   flex:1;
 }
+
 .left {
   flex:1;
   padding-right: 10px;
@@ -41,13 +41,12 @@ div.image {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #000;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-    text-decoration:none;
-    color:white;
+  font-family: 'Lato', sans-serif;
+  text-decoration:none;
+  color:white;
   &:hover {
     background: rgba(102,177,241,0.8);
     transition: all 0.5s ease;
@@ -57,17 +56,14 @@ div.image {
 .navbar {
   text-align: center;
   display: flex;
-    width:100%;
-   position:fixed;
-
-   background-color: #2A2C39;
-   height:60px;
-   font-family: 'Lato', sans-serif;
-   margin:0px auto;
-   flex-direction: row;
-   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-
-
+  width:100%;
+  position:fixed;
+  background-color: #2A2C39;
+  height:60px;
+  font-family: 'Lato', sans-serif;
+  margin:0px auto;
+  flex-direction: row;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
    &--top {
        position: fixed;
        top: 0;

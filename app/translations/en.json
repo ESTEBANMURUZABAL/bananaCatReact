@@ -4,6 +4,7 @@
   "boilerplate.components.Header.contact": "Contact",
   "boilerplate.components.Header.about": "About us",
   "boilerplate.components.Header.home": "Home",
+  "boilerplate.components.Header.lenguage": "Lenguaje",
 
   "boilerplate.containers.ServicesPage.selectPlan": "Select Plan",
 
@@ -142,10 +143,8 @@
   "boilerplate.containers.FeaturePage.state_management.message": "Unidirectional data flow allows for change logging and time travel\n    debugging.",
 
   "boilerplate.containers.HomePage.word0": "We make",
-  "boilerplate.containers.HomePage.start_project.message1": " websites",
-  "boilerplate.containers.HomePage.word1": "%x20social content",
 
-  "boilerplate.containers.LocaleToggle.es": "es",
-  "boilerplate.containers.LocaleToggle.en": "en",
+  "boilerplate.containers.LocaleToggle.es": "eng",
+  "boilerplate.containers.LocaleToggle.en": "esp",
   "boilerplate.containers.NotFoundPage.header": "Page not found."
 }

@@ -1,10 +1,7 @@
-
-
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import styled from 'styled-components';
 import { Link } from 'react-router';
-import style from './index.scss';
+import './index.scss';
 import LocaleToggle from 'containers/LocaleToggle';
 import messages from './messages';
 
