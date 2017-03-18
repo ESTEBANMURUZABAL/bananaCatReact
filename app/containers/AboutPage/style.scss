@@ -1,10 +1,23 @@
-
 #about-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #2A2C39;
   overflow: hidden;
-  padding-bottom: 200px;
+  position: relative;
+}
+
+.about-wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  font: 200 30px 'Lato';
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 60px;
+
 }
 
 .section-header-about {
@@ -16,14 +29,4 @@
   letter-spacing: 6px;
   color: #fff;
   margin-bottom: 25px;
-}
-
-.about-wrapper {
-  margin: 0 auto;
-  padding-top: 20px;
-  position: relative;
-  max-width: 800px;
-  font: 200 30px 'Lato';
-  color: white;
-  text-align: center;
 }

@@ -24,7 +24,7 @@ export default class AboutPage extends React.Component { // eslint-disable-line 
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
         />
-        <h1 className="section-header-about"><FormattedMessage {...messages.header} /></h1>
+
         <div className="about-wrapper">
           <div><FormattedMessage {...messages.content} /></div>
         </div>
