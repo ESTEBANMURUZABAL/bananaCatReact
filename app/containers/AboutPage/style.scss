@@ -1,0 +1,29 @@
+
+#about-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #2A2C39;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+.section-header-about {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  font: 300 60px 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.about-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+  font: 200 30px 'Lato';
+  color: white;
+  text-align: center;
+}

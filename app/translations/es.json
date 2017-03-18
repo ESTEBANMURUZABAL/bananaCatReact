@@ -119,7 +119,7 @@
   "boilerplate.containers.ServicesPage.mobileAppsTab.pack4.feature1": "Contanos tu idea de aplicacion y que deberia tener/hacer!",
 
   "boilerplate.containers.AboutPage.header": "Sobre nosotros",
-  "boilerplate.containers.AboutPage.content": "Somos BananaCatCo, a company that makes clean, modern websites and applications with the most kickass technology. I focus on User Experience and desiging intuitive, enjoyable products. More broadly, I provide Graphic Design, Social Media, Video Editing, Web Design & Development, Advertising and many other creative solutions for businesses large & small as well as non-profits and individuals.",
+  "boilerplate.containers.AboutPage.content": "Somos BananaCatCo, una compania que desarrolla aplicaciones y paginas web simples minimalistas y modernas con tecnologias de punta. Nos concentramos en la experiencia del usuario y en diseñar productos intuitivos y disfrutables. Mas ampliamente somos emprendedores y nos gusta desarrollar y ser partes de las ideas, ofrecemos soluciones de publicidad y soluciones creativas para grandes y pequeños negocios, como tambien a asociaciones sin fines de lucro.",
 
   "boilerplate.containers.ContactPage.title": "Contactanos",
   "boilerplate.containers.ContactPage.email": "CORREO",
@@ -131,6 +131,8 @@
   "boilerplate.containers.ContactPage.subtitle": "Tu paquete incluye:",
   "boilerplate.containers.ContactPage.propousalMessage": "COMENTARIOS Y PREGUNTAS",
   "boilerplate.containers.ContactPage.send": "ENVIAR",
+
+  "boilerplate.containers.FeaturePage.header": "Vista en construccion :)",
 
   "boilerplate.containers.WorksPage.word0": "Hacemos",
 
