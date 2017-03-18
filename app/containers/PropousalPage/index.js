@@ -89,8 +89,7 @@ PropousalPage.propTypes = {
 export default injectIntl(PropousalPage);
 
 function WebPack1() {
-  return
-    <div>
+  return <div>
       <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
       <ul className="contact-list">
         <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack1Feature1} /></span></i></li>
@@ -101,8 +100,7 @@ function WebPack1() {
     </div>
 }
 function WebPack2() {
-  return
-    <div>
+  return <div>
       <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
       <ul className="contact-list">
         <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack2Feature1} /></span></i></li>
@@ -115,8 +113,7 @@ function WebPack2() {
     </div>
 }
 function WebPack3() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack3Feature1} /></span></i></li>
@@ -137,8 +134,7 @@ function WebPack4() {
   </div>
 }
 function SocialPack1() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack1Feature1} /></span></i></li>
@@ -149,8 +145,7 @@ function SocialPack1() {
   </div>
 }
 function SocialPack2() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack2Feature1} /></span></i></li>
@@ -163,8 +158,7 @@ function SocialPack2() {
   </div>
 }
 function SocialPack3() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack3Feature1} /></span></i></li>
@@ -185,8 +179,7 @@ function SocialPack4() {
   </div>
 }
 function MobilePack1() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack1Feature1} /></span></i></li>
@@ -197,8 +190,7 @@ function MobilePack1() {
   </div>
 }
 function MobilePack2() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack2Feature1} /></span></i></li>
@@ -211,8 +203,7 @@ function MobilePack2() {
   </div>
 }
 function MobilePack3() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack3Feature1} /></span></i></li>
@@ -233,20 +224,18 @@ function MobilePack4() {
   </div>
 }
 function MobileAppsPack1() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack1Feature1} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobileAppsPack1Feature2} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack1Feature3} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack1Feature4} /></span></i></li>
+      <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack1Feature1} /></span></i></li>
+      <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobileAppsPack1Feature2} /></span></i></li>
+      <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack1Feature3} /></span></i></li>
+      <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack1Feature4} /></span></i></li>
     </ul>
   </div>
 }
 function MobileAppsPack2() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack2Feature1} /></span></i></li>
@@ -259,8 +248,7 @@ function MobileAppsPack2() {
   </div>
 }
 function MobileAppsPack3() {
-  return
-  <div>
+  return <div>
     <div className="subtitle-text"><FormattedMessage {...messages.subtitle} /></div>
     <ul className="contact-list">
       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack3Feature1} /></span></i></li>
