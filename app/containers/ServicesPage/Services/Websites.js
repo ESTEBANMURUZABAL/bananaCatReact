@@ -43,7 +43,7 @@ const Websites = function() {
 
         <div className="plan">
           <header><i className="ion-ios-people"></i>
-            <h4 className="plan-title">eCommerce</h4>
+            <h4 className="plan-title">Online Store</h4>
             <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice3} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
@@ -59,16 +59,11 @@ const Websites = function() {
 
         <div className="plan">
           <header><i className="ion-ios-speedometer"></i>
-            <h4 className="plan-title">Custom</h4>
+            <h4 className="plan-title">Custom Web</h4>
             <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.webPrice4} /></span><span className="plan-type"></span></div>
           </header>
           <ul className="plan-features">
             <li><FormattedMessage {...messages.webPack4Feature1} /></li>
-            <li><FormattedMessage {...messages.webPack4Feature2} /></li>
-            <li><FormattedMessage {...messages.webPack4Feature3} /></li>
-            <li><FormattedMessage {...messages.webPack4Feature4} /></li>
-            <li><FormattedMessage {...messages.webPack4Feature5} /></li>
-            <li><FormattedMessage {...messages.webPack4Feature6} /></li>
           </ul>
           <div className="plan-select"><Link to="/services/webPack4"><FormattedMessage {...messages.selectPlan} /></Link></div>
         </div>

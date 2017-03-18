@@ -122,11 +122,6 @@ function WebPack3() {
 function WebPack4() {
   return <div>
     <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.webPack4Feature1} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.webPack4Feature2} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature3} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature4} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature5} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.webPack4Feature6} /></span></i></li>
     </div>
 }
 function SocialPack1() {
@@ -160,11 +155,6 @@ function SocialPack3() {
 function SocialPack4() {
   return <div>
     <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.socialPack4Feature1} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.socialPack4Feature2} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature3} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature4} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature5} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.socialPack4Feature6} /></span></i></li>
     </div>
 }
 function MobilePack1() {
@@ -198,11 +188,6 @@ function MobilePack3() {
 function MobilePack4() {
   return <div>
     <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobilePack4Feature1} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobilePack4Feature2} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature3} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature4} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature5} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobilePack4Feature6} /></span></i></li>
     </div>
 }
 function MobileAppsPack1() {
@@ -236,10 +221,5 @@ function MobileAppsPack3() {
 function MobileAppsPack4() {
   return <div>
     <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage {...messages.mobileAppsPack4Feature1} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage {...messages.mobileAppsPack4Feature2} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature3} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature4} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature5} /></span></i></li>
-    <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage {...messages.mobileAppsPack4Feature6} /></span></i></li>
     </div>
 }

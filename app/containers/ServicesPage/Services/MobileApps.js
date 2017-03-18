@@ -13,8 +13,8 @@ const MobileApps = function() {
 
       <div className="plan">
         <header><i className="ion-ios-navigate-outline"></i>
-          <h4 className="plan-title">Package 1</h4>
-          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice1} /></span><span className="plan-type">/month</span></div>
+          <h4 className="plan-title">Simple App</h4>
+          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice1} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
         </header>
         <ul className="plan-features">
           <li><FormattedMessage {...messages.mobileAppsPack1Feature1} /></li>
@@ -27,8 +27,8 @@ const MobileApps = function() {
 
       <div className="plan">
         <header><i className="ion-ios-world"></i>
-          <h4 className="plan-title">Package 2</h4>
-          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice2} /></span><span className="plan-type">/month</span></div>
+          <h4 className="plan-title">Online Store App</h4>
+          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice2} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
         </header>
         <ul className="plan-features">
           <li><FormattedMessage {...messages.mobileAppsPack2Feature1} /></li>
@@ -43,8 +43,8 @@ const MobileApps = function() {
 
       <div className="plan">
         <header><i className="ion-ios-people"></i>
-          <h4 className="plan-title">Package 3</h4>
-          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice3} /></span><span className="plan-type">/month</span></div>
+          <h4 className="plan-title">Reservation App</h4>
+          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice3} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
         </header>
         <ul className="plan-features">
           <li><FormattedMessage {...messages.mobileAppsPack3Feature1} /></li>
@@ -59,16 +59,11 @@ const MobileApps = function() {
 
       <div className="plan">
         <header><i className="ion-ios-speedometer"></i>
-          <h4 className="plan-title">Custom</h4>
-          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice4} /></span><span className="plan-type">/month</span></div>
+          <h4 className="plan-title">Custom App</h4>
+          <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice4} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
         </header>
         <ul className="plan-features">
           <li><FormattedMessage {...messages.mobileAppsPack4Feature1} /></li>
-          <li><FormattedMessage {...messages.mobileAppsPack4Feature2} /></li>
-          <li><FormattedMessage {...messages.mobileAppsPack4Feature3} /></li>
-          <li><FormattedMessage {...messages.mobileAppsPack4Feature4} /></li>
-          <li><FormattedMessage {...messages.mobileAppsPack4Feature5} /></li>
-          <li><FormattedMessage {...messages.mobileAppsPack4Feature6} /></li>
         </ul>
         <div className="plan-select"><Link to="/services/mobileAppsPack4"><FormattedMessage {...messages.selectPlan} /></Link></div>
       </div>
