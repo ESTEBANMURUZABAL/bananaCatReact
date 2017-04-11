@@ -27,7 +27,7 @@ const MobileApps = function() {
 
       <div className="plan">
         <header><i className="ion-ios-world"></i>
-          <h4 className="plan-title">Online Store App</h4>
+          <h4 className="plan-title">Online Store</h4>
           <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice2} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
         </header>
         <ul className="plan-features">
@@ -43,7 +43,7 @@ const MobileApps = function() {
 
       <div className="plan">
         <header><i className="ion-ios-people"></i>
-          <h4 className="plan-title">Reservation App</h4>
+          <h4 className="plan-title">Reservation</h4>
           <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice3} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
         </header>
         <ul className="plan-features">

@@ -1,17 +1,16 @@
-.fold-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -2;
-}
-
-.fold-bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.home-container {
+  text-align: center;
+  height:100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: url(miniature-figure-1745718_1920.jpg);
+  background-size:cover;
+  color: #fafafa;
+  text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+  font: 900 6.853em Montserrat, Helvetica, Times, serif;
+  letter-spacing: -.45rem;
+  box-sizing: border-box;
 }

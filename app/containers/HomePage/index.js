@@ -10,6 +10,7 @@ import { FormattedMessage } from 'react-intl';
 import React from 'react';
 import Helmet from 'react-helmet';
 import messages from './messages';
+import './styles.scss';
 
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -59,7 +60,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     const changeWord = this.state.currentWord || '';
 
     return (
-      <Container>
+      <div className="home-container">
         <Helmet
           meta={[
             { name: 'description', content: 'Banana Cat Ideas & Solutions' },
@@ -69,7 +70,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <FormattedMessage {...messages.word0} />
           <TextSwitcher name={changeWord} />
         </TitleLink>
-      </Container>
+      </div>
     );
   }
 }
@@ -78,22 +79,4 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
 const TitleLink = styled(Link)`
   text-decoration: none;
   color: white;
-`;
-
-const Container = styled.div`
-  text-align: center;
-  height:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  background-color: #2A2C39;
-  color: #fafafa;
-  width:100%;
-  text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
-  font-family: Montserrat, Helvetica, Times, serif;
-  letter-spacing: -.45rem;
-  font-size: 6.853em;
-  font-weight: 900;
-  box-sizing: border-box;
 `;
